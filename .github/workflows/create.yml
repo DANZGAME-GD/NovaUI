@@ -24,7 +24,7 @@ jobs:
 
       - name: Create ZIP file
         run: |
-          zip -r project-${{ steps.version.outputs.version }}.zip . -x ".git/*"
+          zip -r NovaUi.zip . -x ".git/*"
 
       - name: Create Tag
         run: |
@@ -38,4 +38,4 @@ jobs:
         with:
           tag_name: ${{ steps.version.outputs.version }}
           name: Release ${{ steps.version.outputs.version }}
-          files: project-${{ steps.version.outputs.version }}.zip
+          files: NovaUi.zip
