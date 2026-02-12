@@ -1,0 +1,16 @@
+{
+    "children": {
+        "node": {
+            "right-corner": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "left-corner": {
+                "attributes": {
+                    "visible": false
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "children": {
+        "index": [
+            {
+                "type": "CCLayerColor",
+                "index": 0,
+                "attributes": {
+                    "visible": true,
+                    "color": "#EE4A4A",
+                    "blending": {
+                        "source": "GL_ONE_MINUS_SRC_COLOR",
+                        "destination": "GL_ONE_MINUS_SRC_ALPHA"
+                    }
+                }
+            }
+        ]
+    }
+}

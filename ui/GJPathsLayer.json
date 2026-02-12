@@ -1,0 +1,88 @@
+{
+    "children": {
+        "index": [
+            {
+                "type": "CCLayer",
+                "index": 0,
+                "children": {
+                    "new": [
+                        {
+                            "type": "CCMenu",
+                            "id": "orb-hitbox",
+                            "attributes": {
+                                "position": {
+                                    "anchor": "top-right",
+                                    "x": -90,
+                                    "y": -25
+                                },
+                                "ignore-anchor-pos": false,
+                                "z-order": 1,
+                                "scale": 0.6,
+                                "content-size": {
+                                    "width": 165,
+                                    "height": 33.5
+                                },
+                                "update-layout": "self",
+                                "layout": {
+                                    "axis": "row",
+                                    "axis-alignment": "end",
+                                    "cross=axis-alignment": "start",
+                                    "cross=axis-line-alignment": "start",
+                                    "auto-scale": true,
+                                    "allow-cross-axis-overflow": true
+                                }
+                            },
+                            "children": {
+                                "new": [
+                                    {
+                                        "type": "CCScale9Sprite",
+                                        "id": "orb-text-bg",
+                                        "attributes": {
+                                            "sprite": "GJ_square07.png",
+                                            "position": {
+                                                "anchor": "center",
+                                                "x": 0,
+                                                "y": 0
+                                            },
+                                            "content-size": {
+                                                "width": 165,
+                                                "height": 33.5
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "CCLabelBMFont",
+                                        "id": "orb-count-label",
+                                        "attributes": {
+                                            "text": "{current_orbs_stat}",
+                                            "font": "bigFont.fnt",
+                                            "position": {
+                                                "anchor": "center",
+                                                "x": 0,
+                                                "y": 1.5
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "CCSprite",
+                            "id": "orb-icon",
+                            "attributes": {
+                                "sprite-frame": "currencyOrbIcon_001.png",
+                                "position": {
+                                    "anchor": "top-right",
+                                    "x": -25,
+                                    "y": -25
+                                },
+                                "scale": 0.9,
+                                "z-order": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

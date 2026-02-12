@@ -1,0 +1,109 @@
+{
+    "children": {
+        "new": [
+            {
+                "type": "CCSprite",
+                "id": "logo_main",
+                "attributes": {
+                    "sprite": "Danz_asset/nova_logo.png",
+                    "position": {
+                        "anchor": "center",
+                        "x": 0,
+                        "y": 10
+                    },
+                    "scale": 1.8
+                }
+            }
+        ],
+        "node": {
+            "bg-texture": {
+                "attributes": {
+                    "sprite": "Danz_asset/loading_bg.png",
+                    "color": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255
+                    }
+                }
+            },
+            "cocos2d-logo": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "fmod-logo": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "gd-logo": {
+                "attributes": {
+                    "sprite": "Danz_asset/gd_logo.png",
+                    "position": {
+                        "anchor": "top-right",
+                        "x": -150,
+                        "y": -25
+                    },
+                    "scale": 0.6
+                }
+            },
+            "geode-small-label": {
+                "attributes": {
+                    "font": "gjFont52.fnt",
+                    "position": {
+                        "anchor": "self",
+                        "x": 0,
+                        "y": 5
+                    }
+                }
+            },
+            "geode-small-label-2": {
+                "attributes": {
+                    "font": "gjFont52.fnt",
+                    "position": {
+                        "anchor": "self",
+                        "x": 0,
+                        "y": 5
+                    }
+                }
+            },
+            "robtop-logo": {
+                "attributes": {
+                    "position": {
+                        "anchor": "top-left",
+                        "x": 50,
+                        "y": -21
+                    },
+                    "scale": 0.6
+                }
+            },
+            "progress-slider": {
+                "attributes": {
+                    "opacity": 0,
+                    "scale": {
+                        "fit": {
+                            "relative": "screen-width",
+                            "multiplier": 1.2
+                        }
+                    },
+                    "position": {
+                        "anchor": "bottom-center",
+                        "x": 0,
+                        "y": -2
+                    }
+                },
+                "children": {
+                    "index": [
+                        {
+                            "type": "CCSprite",
+                            "index": 0,
+                            "attributes": {
+                                "sprite": "Danz_asset/loading.png"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "children": {
+        "node": {
+            "background": {
+                "attributes": {
+                    "color": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255
+                    }
+                }
+            },
+            "ground-layer": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "bottom-left-corner": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "bottom-right-corner": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "top-bar-sprite": {
+                "attributes": {
+                    "visible": false
+                }
+            }
+        }
+    }
+}

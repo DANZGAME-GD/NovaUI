@@ -1,0 +1,192 @@
+{
+    "attributes": {
+        "opacity": 0,
+        "z-order": 1,
+        "scale": 0.7,
+        "position": {
+            "anchor": "self",
+            "x": -160,
+            "y": 20
+        }
+    },
+    "children": {
+        "query": {
+            "[CCLayer:0] > [CCMenu:2] > [CCMenuItemSpriteExtra:0]": {
+                "attributes": {
+                    "sprite": "Danz_asset/Danz_BlankUi.png",
+                    "position": {
+                        "anchor": "self",
+                        "x": 200,
+                        "y": 50
+                    },
+                    "scale": 0.575,
+                    "base-scale": 0.575,
+                    "visible": true,
+                    "content-size": {
+                        "width": 510,
+                        "height": 80
+                    }
+                },
+                "event": {
+                    "on-activate": {
+                        "attributes": {
+                            "actions": [
+                                {
+                                    "type": "ScaleTo",
+                                    "duration": 0.1,
+                                    "value": 0.575,
+                                    "easing": "BackOut"
+                                }
+                            ]
+                        }
+                    },
+                    "on-click": {
+                        "attributes": {
+                            "actions": [
+                                {
+                                    "type": "ScaleTo",
+                                    "duration": 0.1,
+                                    "value": 0.575,
+                                    "easing": "BackOut"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "children": {
+                    "new": [
+                        {
+                            "type": "CCScale9Sprite",
+                            "id": "quit-preview-sprite",
+                            "attributes": {
+                                "sprite": "geode.loader/GE_square03.png",
+                                "content-size": {
+                                    "width": 590,
+                                    "height": 80
+                                },
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "scale": 0.85,
+                                "base-scale": 0.85
+                            }
+                        },
+                        {
+                            "type": "CCSprite",
+                            "id": "exit-sprite",
+                            "attributes": {
+                                "sprite": "Danz_asset/exit.png",
+                                "position": {
+                                    "anchor": "center-left",
+                                    "x": 50,
+                                    "y": 0
+                                },
+                                "scale": 1.4
+                            }
+                        },
+                        {
+                            "type": "CCLabelBMFont",
+                            "id": "exit-text",
+                            "attributes": {
+                                "font": "BigFont.fnt",
+                                "text": "Press To Exit TP Info",
+                                "scale": 1,
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 20,
+                                    "y": 0
+                                },
+                                "color": "#AFAFAFFF"
+                            }
+                        }
+                    ]
+                }
+            },
+            "[CCLayer:0] > [CCScale9Sprite:0]": {
+                "attributes": {
+                    "content-size": {
+                        "width": 342,
+                        "height": 300
+                    },
+                    "position": {
+                        "anchor": "self",
+                        "x": 0,
+                        "y": -30
+                    }
+                }
+            },
+            "[MDTextArea:7] > ScrollLayer": {
+                "attributes": {
+                    "content-size": {
+                        "width": 285,
+                        "height": 200
+                    },
+                    "position": {
+                        "anchor": "self",
+                        "x": 0,
+                        "y": -50
+                    }
+                }
+            },
+            "[MDTextArea:7] > ScrollLayer > content-layer": {
+                "attributes": {
+                    "position": {
+                        "anchor": "self",
+                        "x": 0,
+                        "y": 50
+                    }
+                }
+            },
+            "[MDTextArea:7] > [CCScale9Sprite:0]": {
+                "attributes": {
+                    "content-size": {
+                        "width": 600,
+                        "height": 410
+                    },
+                    "position": {
+                        "anchor": "self",
+                        "x": 0,
+                        "y": -30
+                    }
+                }
+            },
+            "[MDTextArea:6] > ScrollLayer": {
+                "attributes": {
+                    "content-size": {
+                        "width": 285,
+                        "height": 200
+                    },
+                    "position": {
+                        "anchor": "self",
+                        "x": 0,
+                        "y": -50
+                    }
+                }
+            },
+            "[MDTextArea:6] > ScrollLayer > content-layer": {
+                "attributes": {
+                    "position": {
+                        "anchor": "self",
+                        "x": 0,
+                        "y": 50
+                    }
+                }
+            },
+            "[MDTextArea:6] > [CCScale9Sprite:0]": {
+                "attributes": {
+                    "content-size": {
+                        "width": 600,
+                        "height": 410
+                    },
+                    "position": {
+                        "anchor": "self",
+                        "x": 0,
+                        "y": -30
+                    }
+                }
+            }
+        }
+    }
+}

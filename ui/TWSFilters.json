@@ -1,0 +1,48 @@
+{
+    "children": {
+        "query": {
+            "[CCLayer:0] > [CCScale9Sprite:1] > [CCMenu:1] > [CCMenuItemToggler:0]": {
+                "event": {
+                    "on-activate": {
+                        "parent": {
+                            "parent": {
+                                "parent": {
+                                    "parent": {
+                                        "parent": {
+                                            "children": {
+                                                "query": {
+                                                    "TextureWorkshopLayer > outline > ScrollLayer" : {
+                                                        "attributes": {
+                                                            "content-size": {
+                                                                "width": 313,
+                                                                "height": 240
+                                                            },
+                                                            "position": {
+                                                                "anchor": "self",
+                                                                "x": 0,
+                                                                "y": -57
+                                                            }
+                                                        }
+                                                    },
+                                                    "TextureWorkshopLayer > outline > ScrollLayer > content-layer" : {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "self",
+                                                                "x": 0,
+                                                                "y": 60
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

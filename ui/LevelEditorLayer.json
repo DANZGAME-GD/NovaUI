@@ -1,0 +1,1172 @@
+{
+    "children": {
+        "node": {
+            "EditorUI": {
+                "children": {
+                    "node": {
+                        "toolbar-toggles-menu": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 110,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.15
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": -110,
+                                                    "y": 0
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "undo-menu": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -150,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.10
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 150,
+                                                    "y": 0
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "playback-menu": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -70,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.15
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 70,
+                                                    "y": 0
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "playtest-menu": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -70,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 70,
+                                                    "y": 0
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "zoom-menu": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -150,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.25
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 150,
+                                                    "y": 0
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "toolbar-categories-menu": {
+                            "children": {
+                                "node": {
+                                    "build-button": {
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "self",
+                                                "x": -100,
+                                                "y": 0
+                                            },
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "FadeIn",
+                                                            "duration": 0.15
+                                                        },
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.5,
+                                                            "value": {
+                                                                "x": 100,
+                                                                "y": 0
+                                                            },
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "edit-button": {
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "self",
+                                                "x": -100,
+                                                "y": 0
+                                            },
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "FadeIn",
+                                                            "duration": 0.18
+                                                        },
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.5,
+                                                            "value": {
+                                                                "x": 100,
+                                                                "y": 0
+                                                            },
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "delete-button": {
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "self",
+                                                "x": -100,
+                                                "y": 0
+                                            },
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "FadeIn",
+                                                            "duration": 0.21
+                                                        },
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.5,
+                                                            "value": {
+                                                                "x": 100,
+                                                                "y": 0
+                                                            },
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "settings-menu": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 150,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.15
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": -150,
+                                                    "y": 0
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "editor-buttons-menu": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 250,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": -250,
+                                                    "y": 0
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "layer-menu": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 150,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.15
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": -150,
+                                                    "y": 0
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "position-slider": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": 50
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": -50
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "block-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "outline-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "slope-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "hazard-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "3d-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "portal-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "monster-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "pixel-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "collectible-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "icon-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "deco-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "sawblade-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "trigger-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "custom-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "edit-tab-bar": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "delete-category-menu": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -100
+                                },
+                                "actions": [
+                                    {
+                                        "type": "Sequence",
+                                        "actions": [
+                                            {
+                                                "type": "FadeIn",
+                                                "duration": 0.20
+                                            },
+                                            {
+                                                "type": "MoveBy",
+                                                "duration": 0.5,
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 100
+                                                },
+                                                "easing": "BackOut"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "build-tabs-menu": {
+                            "children": {
+                                "index": [
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "index": 0,
+                                        "attributes" :{
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.1,
+                                                            "value": 0
+                                                        },
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 1,
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "index": 1,
+                                        "attributes" :{
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.15,
+                                                            "value": 0
+                                                        },
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 1,
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "index": 2,
+                                        "attributes" :{
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.2,
+                                                            "value": 0
+                                                        },
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 1,
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "index": 3,
+                                        "attributes" :{
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.25,
+                                                            "value": 0
+                                                        },
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 1,
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "index": 4,
+                                        "attributes" :{
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 0
+                                                        },
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 1,
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "index": 5,
+                                        "attributes" :{
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.35,
+                                                            "value": 0
+                                                        },
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 1,
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "index": 6,
+                                        "attributes" :{
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.4,
+                                                            "value": 0
+                                                        },
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 1,
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "index": 7,
+                                        "attributes" :{
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.45,
+                                                            "value": 0
+                                                        },
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 1,
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "index": 8,
+                                        "attributes" :{
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.5,
+                                                            "value": 0
+                                                        },
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 1,
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "index": 9,
+                                        "attributes" :{
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.55,
+                                                            "value": 0
+                                                        },
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 1,
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "index": 10,
+                                        "attributes" :{
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.6,
+                                                            "value": 0
+                                                        },
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 1,
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "index": 11,
+                                        "attributes" :{
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.65,
+                                                            "value": 0
+                                                        },
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 1,
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "index": 12,
+                                        "attributes" :{
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.7,
+                                                            "value": 0
+                                                        },
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 1,
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "index": 13,
+                                        "attributes" :{
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.75,
+                                                            "value": 0
+                                                        },
+                                                        {
+                                                            "type": "ScaleTo",
+                                                            "duration": 0.3,
+                                                            "value": 1,
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

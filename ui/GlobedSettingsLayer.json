@@ -1,0 +1,244 @@
+{
+    "children": {
+        "node": {
+            "dankmeme.globed2/setting-list-1": {
+                "children": {
+                    "node": {
+                        "list-view": {
+                            "children": {
+                                "index": [
+                                    {
+                                        "type": "TableView",
+                                        "index": 0,
+                                        "children": {
+                                            "index": [
+                                                {
+                                                    "type": "CCContentLayer",
+                                                    "index": 0,
+                                                    "children": {
+                                                        "index": [
+                                                            {
+                                                                "type": "GenericListCell",
+                                                                "index": 0,
+                                                                "children": {
+                                                                    "index": [
+                                                                        {
+                                                                            "type": "CCLayerColor",
+                                                                            "index": 0,
+                                                                            "attributes": {
+                                                                                "opacity": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "GenericListCell",
+                                                                "index": 1,
+                                                                "children": {
+                                                                    "index": [
+                                                                        {
+                                                                            "type": "CCLayerColor",
+                                                                            "index": 0,
+                                                                            "attributes": {
+                                                                                "opacity": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "GenericListCell",
+                                                                "index": 2,
+                                                                "children": {
+                                                                    "index": [
+                                                                        {
+                                                                            "type": "CCLayerColor",
+                                                                            "index": 0,
+                                                                            "attributes": {
+                                                                                "opacity": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "GenericListCell",
+                                                                "index": 3,
+                                                                "children": {
+                                                                    "index": [
+                                                                        {
+                                                                            "type": "CCLayerColor",
+                                                                            "index": 0,
+                                                                            "attributes": {
+                                                                                "opacity": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "GenericListCell",
+                                                                "index": 4,
+                                                                "children": {
+                                                                    "index": [
+                                                                        {
+                                                                            "type": "CCLayerColor",
+                                                                            "index": 0,
+                                                                            "attributes": {
+                                                                                "opacity": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "GenericListCell",
+                                                                "index": 5,
+                                                                "children": {
+                                                                    "index": [
+                                                                        {
+                                                                            "type": "CCLayerColor",
+                                                                            "index": 0,
+                                                                            "attributes": {
+                                                                                "opacity": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "GenericListCell",
+                                                                "index": 6,
+                                                                "children": {
+                                                                    "index": [
+                                                                        {
+                                                                            "type": "CCLayerColor",
+                                                                            "index": 0,
+                                                                            "attributes": {
+                                                                                "opacity": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "GenericListCell",
+                                                                "index": 7,
+                                                                "children": {
+                                                                    "index": [
+                                                                        {
+                                                                            "type": "CCLayerColor",
+                                                                            "index": 0,
+                                                                            "attributes": {
+                                                                                "opacity": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "GenericListCell",
+                                                                "index": 8,
+                                                                "children": {
+                                                                    "index": [
+                                                                        {
+                                                                            "type": "CCLayerColor",
+                                                                            "index": 0,
+                                                                            "attributes": {
+                                                                                "opacity": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "GenericListCell",
+                                                                "index": 9,
+                                                                "children": {
+                                                                    "index": [
+                                                                        {
+                                                                            "type": "CCLayerColor",
+                                                                            "index": 0,
+                                                                            "attributes": {
+                                                                                "opacity": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "GenericListCell",
+                                                                "index": 10,
+                                                                "children": {
+                                                                    "index": [
+                                                                        {
+                                                                            "type": "CCLayerColor",
+                                                                            "index": 0,
+                                                                            "attributes": {
+                                                                                "opacity": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "GenericListCell",
+                                                                "index": 11,
+                                                                "children": {
+                                                                    "index": [
+                                                                        {
+                                                                            "type": "CCLayerColor",
+                                                                            "index": 0,
+                                                                            "attributes": {
+                                                                                "opacity": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "GenericListCell",
+                                                                "index": 12,
+                                                                "children": {
+                                                                    "index": [
+                                                                        {
+                                                                            "type": "CCLayerColor",
+                                                                            "index": 0,
+                                                                            "attributes": {
+                                                                                "opacity": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "GenericListCell",
+                                                                "index": 13,
+                                                                "children": {
+                                                                    "index": [
+                                                                        {
+                                                                            "type": "CCLayerColor",
+                                                                            "index": 0,
+                                                                            "attributes": {
+                                                                                "opacity": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

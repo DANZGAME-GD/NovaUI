@@ -1,0 +1,40 @@
+{
+    "children": {
+        "index": [
+            {
+                "type": "CCLayer",
+                "index": 0,
+                "children": {
+                    "new": [
+                        {
+                            "type": "CCLabelBMFont",
+                            "id": "password-level",
+                            "attributes": {
+                                "font": "bigFont.fnt",
+                                "position": {
+                                    "anchor": "top-right",
+                                    "x": -120,
+                                    "y": -10
+                                },
+                                "text": "The Password Is{level_password}",
+                                "scale": 0.5,
+                                "update-layout": "self"
+                            },
+                            "children": {
+                                "index": [
+                                    {
+                                        "type": "CCFontSprite",
+                                        "index": 15,
+                                        "attributes": {
+                                            "remove": true
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,358 @@
+{
+    "children": {
+        "node": {
+            "content-background":{
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "button-menu": {
+                "children": {
+                    "node": {
+                        "refresh-button": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 45,
+                                    "y": -40
+                                }
+                            }
+                        },
+                        "discord-button": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -435,
+                                    "y": 5
+                                }
+                            }
+                        },
+                        "support-button": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -390,
+                                    "y": -30
+                                }
+                            }
+                        },
+                        "credits-button": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -345,
+                                    "y": -65
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "background": {
+                "attributes": {
+                    "z-order": -2
+                }
+            },
+            "background-overlay": {
+                "attributes": {
+                    "z-order": -1
+                }
+            },
+            "outline": {
+                "attributes": {
+                    "opacity": 0,
+                    "scale": 0.9,
+                    "position": {
+                        "anchor": "self",
+                        "x": 130,
+                        "y": 40
+                    },
+                    "z-order": 10
+                },
+                "children": {
+                    "node": {
+                        "ScrollLayer": {
+                            "attributes": {
+                                "content-size": {
+                                    "width": 313,
+                                    "height": 240
+                                },
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 0,
+                                    "y": -57
+                                }
+                            },
+                            "children": {
+                                "node": {
+                                    "content-layer": {
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "self",
+                                                "x": 0,
+                                                "y": 60
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "children": {
+                            "new": [
+                                {
+                                    "type": "CCMenu",
+                                    "id": "border",
+                                    "attributes": {
+                                        "z-order": 1,
+                                        "ignore-anchor-pos": false,
+                                        "content-size": {
+                                            "width": 325,
+                                            "height": 275
+                                        },
+                                        "position": {
+                                            "anchor": "center",
+                                            "x": -8,
+                                            "y": -37
+                                        }
+                                    },
+                                    "children": {
+                                        "new": [
+                                            {
+                                                "type": "CCSprite",
+                                                "id": "border-left",
+                                                "attributes": {
+                                                    "sprite-frame": "geode.loader/mods-list-side.png",
+                                                    "position": {
+                                                        "anchor": "center-left",
+                                                        "x": 0,
+                                                        "y": 0
+                                                    },
+                                                    "scale": {
+                                                        "x": 0.9,
+                                                        "y": 4.4
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "CCSprite",
+                                                "id": "border-right",
+                                                "attributes": {
+                                                    "sprite-frame": "geode.loader/mods-list-side.png",
+                                                    "position": {
+                                                        "anchor": "center-right",
+                                                        "x": 0,
+                                                        "y": 0
+                                                    },
+                                                    "scale": {
+                                                        "x": 0.9,
+                                                        "y": 4.4
+                                                    },
+                                                    "rotation": 180
+                                                }
+                                            },
+                                            {
+                                                "type": "CCSprite",
+                                                "id": "border-bottom",
+                                                "attributes": {
+                                                    "sprite-frame": "geode.loader/mods-list-bottom.png",
+                                                    "position": {
+                                                        "anchor": "bottom-center",
+                                                        "x": 0,
+                                                        "y": -15
+                                                    },
+                                                    "scale": {
+                                                        "x": 0.88,
+                                                        "y": 0.88
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "CCSprite",
+                                                "id": "border-top",
+                                                "attributes": {
+                                                    "sprite": "Danz_asset/GE_top.png",
+                                                    "position": {
+                                                        "anchor": "top-center",
+                                                        "x": 0,
+                                                        "y": 2
+                                                    },
+                                                    "scale": {
+                                                        "x": 0.88,
+                                                        "y": 0.88
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "new": [
+            {
+                "type": "CCScale9Sprite",
+                "id": "preview-bg",
+                "attributes": {
+                    "sprite": "GJ_square01.png",
+                    "color": "hsv(0, 0, 0)",
+                    "opacity": 75,
+                    "content-size": {
+                        "width": 200,
+                        "height": 120
+                    },
+                    "position": {
+                        "anchor": "center-left",
+                        "x": 120,
+                        "y": 0
+                    }
+                },
+                "children": {
+                    "new": [
+                        {
+                            "type": "CCLabelBMFont",
+                            "id": "text-preview",
+                            "attributes": {
+                                "font": "goldFont.fnt",
+                                "text": "          Press One Of The Info\n    Buttons Of The Texture Pack To\nSee A Description Of That Texture Pack",
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "scale": 0.3
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CCScale9Sprite",
+                "id": "search-bg",
+                "attributes": {
+                    "sprite": "GJ_square01.png",
+                    "color": "hsv(0, 0, 0)",
+                    "opacity": 75,
+                    "content-size": {
+                        "width": 300,
+                        "height": 33
+                    },
+                    "position": {
+                        "anchor": "center",
+                        "x": 125,
+                        "y": 114
+                    }
+                }
+            }
+        ],
+        "move": [
+            {
+                "node": "outline > [TextInput:1]",
+                "parent": "back-menu",
+                "attributes": {
+                    "update-layout": true
+                }
+            }
+        ]
+    },
+    "after-transition": {
+        "children": {
+            "node": {
+                "outline": {
+                    "children": {
+                        "new": [
+                            {
+                                "type": "CCMenu",
+                                "id": "border",
+                                "attributes": {
+                                    "ignore-anchor-pos": false,
+                                    "z-order": 1,
+                                    "content-size": {
+                                        "width": 325,
+                                        "height": 275
+                                    },
+                                    "position": {
+                                        "anchor": "center",
+                                        "x": -8,
+                                        "y": -37    
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "border-left",
+                                            "attributes": {
+                                                "sprite-frame": "geode.loader/mods-list-side.png",
+                                                "scale": {
+                                                    "x": 0.9,
+                                                    "y": 4.4
+                                                },
+                                                "position": {
+                                                    "anchor": "center-left",
+                                                    "x": 0,
+                                                    "y": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "border-right",
+                                            "attributes": {
+                                                "sprite-frame": "geode.loader/mods-list-side.png",
+                                                "scale": {
+                                                    "x": 0.9,
+                                                    "y": 4.4
+                                                },
+                                                "position": {
+                                                    "anchor": "center-right",
+                                                    "x": 0,
+                                                    "y": 0
+                                                },
+                                                "rotation": 180
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "top-center",
+                                            "attributes": {
+                                                "sprite": "Danz_asset/GE_top.png",
+                                                "scale": {
+                                                    "x": 0.88,
+                                                    "y": 0.88
+                                                },
+                                                "position": {
+                                                    "anchor": "top-center",
+                                                    "x": 0,
+                                                    "y": 2
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "bottom-center",
+                                            "attributes": {
+                                                "sprite-frame": "geode.loader/mods-list-bottom.png",
+                                                "scale": {
+                                                    "x": 0.88,
+                                                    "y": 0.88
+                                                },
+                                                "position": {
+                                                    "anchor": "bottom-center",
+                                                    "x": 0,
+                                                    "y": -15
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

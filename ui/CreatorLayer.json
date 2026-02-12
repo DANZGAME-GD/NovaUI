@@ -1,0 +1,1902 @@
+{
+    "children": {
+        "move": [
+            {
+                "node": "cvolton.betterinfo/center-right-menu > cvolton.betterinfo/main-button",
+                "parent": "top-right-menu"
+            },
+            {
+                "node": "spaghettdev.gd-roulette/center-left-menu > spaghettdev.gd-roulette/roulette-button",
+                "parent": "top-right-menu"
+            },
+            {
+                "node": "bottom-left-menu > raydeeux.qiblafinder/qibla-finder-button",
+                "parent": "top-right-menu",
+                "attributes": {
+                    "scale": 0.85,
+                    "base-scale": 0.85
+                }
+            },
+            {
+                "node": "creator-buttons-menu > demon-progression-button",
+                "parent": "top-right-menu",
+                "attributes": {
+                    "sprite-frame": "GJ_plainBtn_001.png",
+                    "scale": 1.15
+                },
+                "children": {
+                    "new": [
+                        {
+                            "type": "CCSprite",
+                            "id": "gddp.logo",
+                            "attributes": {
+                                "sprite-frame": "minemaker0430.gddp_integration/DP_Logo.png",
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "scale": 0.2
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "node": "bottom-right-menu > techstudent10.gdguesser/start-btn",
+                "parent": "top-right-menu"
+            },
+            {
+                "node": "bottom-left-menu > viper.br_list/brl-roulette",
+                "parent": "top-right-menu"
+            }
+        ],
+        "node": {
+            "top-right-menu": {
+                "attributes": {
+                    "update-layout": "parent"
+                },
+                "children": {
+                    "node": {
+                        "vault-button": {
+                            "attributes": {
+                                "remove": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "after-transition": {
+        "children": {
+            "new": [
+                {
+                    "type": "CCMenu",
+                    "id": "nova-left-creator",
+                    "attributes": {
+                        "ignore-anchor-pos": false,
+                        "z-order": 1
+                    },
+                    "children": {
+                        "new": [
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "create-btn",
+                                "attributes": {
+                                    "sprite": "Danz_asset/Danz_blankUi.png",
+                                    "anchor": "center-left",
+                                    "position": {
+                                        "x": -95,
+                                        "y": 258
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "FadeIn",
+                                                    "duration": 0.05
+                                                },
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.5,
+                                                    "value": {
+                                                        "x": 170,
+                                                        "y": 0
+                                                    },
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "callback": {
+                                                "class": "CreatorLayer",
+                                                "method": "onMyLevels"
+                                            }
+                                        }
+                                    },
+                                    "on-hover": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": 20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "on-exit": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": -20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCLabelBMFont",
+                                            "id": "create-label",
+                                            "attributes": {
+                                                "font": "gjFont52.fnt",
+                                                "text": "Create",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -7,
+                                                    "y": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "create-icon",
+                                            "attributes": {
+                                                "sprite": "Danz_asset/creator_point.png",
+                                                "scale": 0.3,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -50,
+                                                    "y": 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "saved-btn",
+                                "attributes": {
+                                    "sprite": "Danz_asset/Danz_blankUi.png",
+                                    "anchor": "center-left",
+                                    "position": {
+                                        "x": -95,
+                                        "y": 220
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "FadeIn",
+                                                    "duration": 0.06
+                                                },
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.5,
+                                                    "value": {
+                                                        "x": 170,
+                                                        "y": 0
+                                                    },
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "callback": {
+                                                "class": "CreatorLayer",
+                                                "method": "onSavedLevels"
+                                            }
+                                        }
+                                    },
+                                    "on-hover": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": 20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "on-exit": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": -20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCLabelBMFont",
+                                            "id": "saved-label",
+                                            "attributes": {
+                                                "font": "gjFont52.fnt",
+                                                "text": "Saved",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -12,
+                                                    "y": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "saved-icon",
+                                            "attributes": {
+                                                "sprite-frame": "Danz_asset/saved.png",
+                                                "scale": 0.3,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -50,
+                                                    "y": 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "scores-btn",
+                                "attributes": {
+                                    "sprite": "Danz_asset/Danz_blankUi.png",
+                                    "anchor": "center-left",
+                                    "position": {
+                                        "x": -95,
+                                        "y": 182
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "FadeIn",
+                                                    "duration": 0.07
+                                                },
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.5,
+                                                    "value": {
+                                                        "x": 170,
+                                                        "y": 0
+                                                    },
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "callback": {
+                                                "class": "CreatorLayer",
+                                                "method": "onLeaderboards"
+                                            }
+                                        }
+                                    },
+                                    "on-hover": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": 20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "on-exit": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": -20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCLabelBMFont",
+                                            "id": "scores-label",
+                                            "attributes": {
+                                                "font": "gjFont52.fnt",
+                                                "text": "Scores",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -7,
+                                                    "y": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "scores-icon",
+                                            "attributes": {
+                                                "sprite-frame": "rankIcon_top50_001.png",
+                                                "scale": 0.5,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -50,
+                                                    "y": 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "quest-btn",
+                                "attributes": {
+                                    "sprite": "Danz_asset/Danz_blankUi.png",
+                                    "anchor": "center-left",
+                                    "position": {
+                                        "x": -95,
+                                        "y": 144
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "FadeIn",
+                                                    "duration": 0.08
+                                                },
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.5,
+                                                    "value": {
+                                                        "x": 170,
+                                                        "y": 0
+                                                    },
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "callback": {
+                                                "class": "CreatorLayer",
+                                                "method": "onChallenge"
+                                            }
+                                        }
+                                    },
+                                    "on-hover": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": 20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "on-exit": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": -20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCLabelBMFont",
+                                            "id": "quest-label",
+                                            "attributes": {
+                                                "font": "gjFont52.fnt",
+                                                "text": "Quest",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -12,
+                                                    "y": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "quest-icon",
+                                            "attributes": {
+                                                "sprite": "Danz_asset/quests_btn2.png",
+                                                "scale": 0.3,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -50,
+                                                    "y": 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "daily-btn",
+                                "attributes": {
+                                    "sprite": "Danz_asset/Danz_blankUi.png",
+                                    "anchor": "center-left",
+                                    "position": {
+                                        "x": -95,
+                                        "y": 106
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "FadeIn",
+                                                    "duration": 0.09
+                                                },
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.5,
+                                                    "value": {
+                                                        "x": 170,
+                                                        "y": 0
+                                                    },
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "callback": {
+                                                "class": "CreatorLayer",
+                                                "method": "onDailyLevel"
+                                            }
+                                        }
+                                    },
+                                    "on-hover": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": 20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "on-exit": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": -20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCLabelBMFont",
+                                            "id": "daily-label",
+                                            "attributes": {
+                                                "font": "gjFont52.fnt",
+                                                "text": "Daily",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -12,
+                                                    "y": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "daily-icon",
+                                            "attributes": {
+                                                "sprite": "Danz_asset/daily_icon.png",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -50,
+                                                    "y": 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "weekly-btn",
+                                "attributes": {
+                                    "sprite": "Danz_asset/Danz_blankUi.png",
+                                    "anchor": "center-left",
+                                    "position": {
+                                        "x": -95,
+                                        "y": 68
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "FadeIn",
+                                                    "duration": 0.1
+                                                },
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.5,
+                                                    "value": {
+                                                        "x": 170,
+                                                        "y": 0
+                                                    },
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "callback": {
+                                                "class": "CreatorLayer",
+                                                "method": "onWeeklyLevel"
+                                            }
+                                        }
+                                    },
+                                    "on-hover": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": 20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "on-exit": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": -20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCLabelBMFont",
+                                            "id": "weekly-label",
+                                            "attributes": {
+                                                "font": "gjFont52.fnt",
+                                                "text": "Weekly",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -7,
+                                                    "y": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "weekly-icon",
+                                            "attributes": {
+                                                "sprite": "Danz_asset/weekly_icon.png",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -50,
+                                                    "y": 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "the-map-btn",
+                                "attributes": {
+                                    "sprite": "Danz_asset/Danz_blankUi.png",
+                                    "anchor": "center-left",
+                                    "position": {
+                                        "x": -95,
+                                        "y": 30
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "FadeIn",
+                                                    "duration": 0.11
+                                                },
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.5,
+                                                    "value": {
+                                                        "x": 170,
+                                                        "y": 0
+                                                    },
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "callback": {
+                                                "class": "CreatorLayer",
+                                                "method": "onAdventureMap"
+                                            }
+                                        }
+                                    },
+                                    "on-hover": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": 20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "on-exit": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": -20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCLabelBMFont",
+                                            "id": "the-map-label",
+                                            "attributes": {
+                                                "font": "gjFont52.fnt",
+                                                "text": "The Map",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -2,
+                                                    "y": 0
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "the-map-icon",
+                                            "attributes": {
+                                                "sprite-frame": "Danz_asset/the_map.png",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -50,
+                                                    "y": 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+						]
+					}
+				},
+				{
+					"type": "CCMenu",
+					"id": "nova-right-creator",
+					"attributes": {
+						"ignore-anchor-pos": false,
+						"z-order": 1
+					},
+					"children": {
+						"new": [
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "event-btn",
+                                "attributes": {
+                                    "sprite": "Danz_asset/Danz_blankUi.png",
+                                    "position": {
+                                        "anchor": "center-right",
+                                        "x": 95,
+                                        "y": 98
+                                    },
+                                    "rotation": {
+                                        "x": 0,
+                                        "y": 180
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "FadeIn",
+                                                    "duration": 0.05
+                                                },
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.5,
+                                                    "value": {
+                                                        "x": -170,
+                                                        "y": 0
+                                                    },
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "callback": {
+                                                "class": "CreatorLayer",
+                                                "method": "onEventLevel"
+                                            }
+                                        }
+                                    },
+                                    "on-hover": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": -20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "on-exit": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": 20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCLabelBMFont",
+                                            "id": "event-label",
+                                            "attributes": {
+                                                "font": "gjFont52.fnt",
+                                                "text": "Event",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -8,
+                                                    "y": 1.5
+                                                },
+                                                "rotation": {
+                                                    "x": 0,
+                                                    "y": 180
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "event-icon",
+                                            "attributes": {
+                                                "sprite": "Danz_asset/event_icon.png",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -50,
+                                                    "y": 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "gauntlet-btn",
+                                "attributes": {
+                                    "sprite": "Danz_asset/Danz_blankUi.png",
+                                    "position": {
+                                        "anchor": "center-right",
+                                        "x": 95,
+                                        "y": 60
+                                    },
+                                    "rotation": {
+                                        "x": 0,
+                                        "y": 180
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "FadeIn",
+                                                    "duration": 0.06
+                                                },
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.5,
+                                                    "value": {
+                                                        "x": -170,
+                                                        "y": 0
+                                                    },
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "callback": {
+                                                "class": "CreatorLayer",
+                                                "method": "onGauntlets"
+                                            }
+                                        }
+                                    },
+                                    "on-hover": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": -20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "on-exit": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": 20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCLabelBMFont",
+                                            "id": "gauntlet-label",
+                                            "attributes": {
+                                                "font": "gjFont52.fnt",
+                                                "text": "Gauntlets",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": 10,
+                                                    "y": 0
+                                                },
+                                                "rotation": {
+                                                    "x": 0,
+                                                    "y": 180
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "gauntlet-icon",
+                                            "attributes": {
+                                                "sprite": "Danz_asset/Gauntlets.png",
+                                                "scale": 0.4,
+                                                "rotation": {
+                                                    "x": 0,
+                                                    "y": 180
+                                                },
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -50,
+                                                    "y": 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "feature-btn",
+                                "attributes": {
+                                    "sprite": "Danz_asset/Danz_blankUi.png",
+                                    "position": {
+                                        "anchor": "center-right",
+                                        "x": 95,
+                                        "y": 22
+                                    },
+                                    "rotation": {
+                                        "x": 0,
+                                        "y": 180
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "FadeIn",
+                                                    "duration": 0.07
+                                                },
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.5,
+                                                    "value": {
+                                                        "x": -170,
+                                                        "y": 0
+                                                    },
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "callback": {
+                                                "class": "CreatorLayer",
+                                                "method": "onFeaturedLevels"
+                                            }
+                                        }
+                                    },
+                                    "on-hover": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": -20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "on-exit": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": 20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCLabelBMFont",
+                                            "id": "featured-label",
+                                            "attributes": {
+                                                "font": "gjFont52.fnt",
+                                                "text": "Featured",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": 5,
+                                                    "y": 0
+                                                },
+                                                "rotation": {
+                                                    "x": 0,
+                                                    "y": 180
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "featured-icon",
+                                            "attributes": {
+                                                "sprite": "Danz_asset/feature_icon.png",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -50,
+                                                    "y": 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "lists-btn",
+                                "attributes": {
+                                    "sprite": "Danz_asset/Danz_blankUi.png",
+                                    "position": {
+                                        "anchor": "center-right",
+                                        "x": 95,
+                                        "y": -16
+                                    },
+                                    "rotation": {
+                                        "x": 0,
+                                        "y": 180
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "FadeIn",
+                                                    "duration": 0.08
+                                                },
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.5,
+                                                    "value": {
+                                                        "x": -170,
+                                                        "y": 0
+                                                    },
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "callback": {
+                                                "class": "CreatorLayer",
+                                                "method": "onTopLists"
+                                            }
+                                        }
+                                    },
+                                    "on-hover": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": -20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "on-exit": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": 20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCLabelBMFont",
+                                            "id": "lists-label",
+                                            "attributes": {
+                                                "font": "gjFont52.fnt",
+                                                "text": "Lists",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -8,
+                                                    "y": 0
+                                                },
+                                                "rotation": {
+                                                    "x": 0,
+                                                    "y": 180
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "lists-icon",
+                                            "attributes": {
+                                                "sprite": "Danz_asset/list_icon.png",
+                                                "scale": 0.4,
+                                                "rotation": {
+                                                    "x": 0,
+                                                    "y": 180
+                                                },
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -50,
+                                                    "y": 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "path-btn",
+                                "attributes": {
+                                    "sprite": "Danz_asset/Danz_blankUi.png",
+                                    "position": {
+                                        "anchor": "center-right",
+                                        "x": 95,
+                                        "y": -54
+                                    },
+                                    "rotation": {
+                                        "x": 0,
+                                        "y": 180
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "FadeIn",
+                                                    "duration": 0.09
+                                                },
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.5,
+                                                    "value": {
+                                                        "x": -170,
+                                                        "y": 0
+                                                    },
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "callback": {
+                                                "class": "CreatorLayer",
+                                                "method": "onPaths"
+                                            }
+                                        }
+                                    },
+                                    "on-hover": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": -20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "on-exit": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": 20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCLabelBMFont",
+                                            "id": "path-label",
+                                            "attributes": {
+                                                "font": "gjFont52.fnt",
+                                                "text": "Paths",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -8,
+                                                    "y": 0
+                                                },
+                                                "rotation": {
+                                                    "x": 0,
+                                                    "y": 180
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "path-icon",
+                                            "attributes": {
+                                                "sprite": "shard0203ShardBig_001.png",
+                                                "scale": 0.5,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -50,
+                                                    "y": 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "packs-btn",
+                                "attributes": {
+                                    "sprite": "Danz_asset/Danz_blankUi.png",
+                                    "position": {
+                                        "anchor": "center-right",
+                                        "x": 95,
+                                        "y": -92
+                                    },
+                                    "rotation": {
+                                        "x": 0,
+                                        "y": 180
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "FadeIn",
+                                                    "duration": 0.1
+                                                },
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.5,
+                                                    "value": {
+                                                        "x": -170,
+                                                        "y": 0
+                                                    },
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "callback": {
+                                                "class": "CreatorLayer",
+                                                "method": "onMapPacks"
+                                            }
+                                        }
+                                    },
+                                    "on-hover": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": -20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "on-exit": {
+                                        "attributes": {
+                                            "actions": [
+                                                {
+                                                    "type": "MoveBy",
+                                                    "duration": 0.1,
+                                                    "value": {
+                                                        "x": 20,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0,
+                                                    "value": 1
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCLabelBMFont",
+                                            "id": "packs-label",
+                                            "attributes": {
+                                                "font": "gjFont52.fnt",
+                                                "text": "Packs",
+                                                "scale": 0.4,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -8,
+                                                    "y": 0
+                                                },
+                                                "rotation": {
+                                                    "x": 0,
+                                                    "y": 180
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "packs-icon",
+                                            "attributes": {
+                                                "sprite": "Danz_asset/packs.png",
+                                                "scale": 0.5,
+                                                "rotation": {
+                                                    "x": 0,
+                                                    "y": 180
+                                                },
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": -50,
+                                                    "y": 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "secret-vault-btn",
+                                "attributes": {
+                                    "sprite-frame": "GJ_lock_open_001.png",
+                                    "position": {
+                                        "anchor": "top-right",
+                                        "x": -22.25,
+                                        "y": -17
+                                    }
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "callback": {
+                                                "class": "CreatorLayer",
+                                                "method": "onSecretVault"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "CCMenu",
+                    "id": "ui-hide-off",
+                    "attributes": {
+                        "ignore-anchor-pos": false,
+                        "z-order": 1
+                    },
+                    "children": {
+                        "new": [
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "hide-ui-off",
+                                "attributes": {
+                                    "sprite": "Danz_asset/player_bg.png",
+                                    "position": {
+                                        "anchor": "center",
+                                        "x": 0,
+                                        "y": 0
+                                    },
+                                    "scale": {
+                                        "fit": {
+                                            "relative": "screen",
+                                            "multiplier": 1.2
+                                        }
+                                    },
+                                    "base-scale": 1.5,
+                                    "opacity": 0
+                                },
+                                "event": {
+                                    "on-activate": {    
+                                        "parent": {
+                                            "parent": {
+                                                "children": {
+                                                    "node": {
+                                                        "nova-right-creator": {
+                                                            "attributes": {
+                                                                "visible": true
+                                                            }
+                                                        },
+                                                        "nova-left-creator": {
+                                                            "attributes": {
+                                                                "visible": true
+                                                            }
+                                                        },
+                                                        "ui-hide-on": {
+                                                            "attributes": {
+                                                                "visible": true
+                                                            },
+                                                            "children": {
+                                                                "node": {
+                                                                    "hide-ui-on": {
+                                                                        "attributes": {
+                                                                            "scale": 1,
+                                                                            "base-scale": 1
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "ui-hide-off": {
+                                                            "attributes": {
+                                                                "visible": false
+                                                            }
+                                                        },
+                                                        "top-right-menu": {
+                                                            "attributes": {
+                                                                "visible": true
+                                                            }
+                                                        },
+                                                        "bottom-right-menu": {
+                                                            "attributes": {
+                                                                "visible": true
+                                                            }
+                                                        },
+                                                        "bottom-left-menu": {
+                                                            "attributes": {
+                                                                "visible": true
+                                                            }
+                                                        },
+                                                        "exit-menu": {
+                                                            "attributes": {
+                                                                "visible": true
+                                                            }
+                                                        },
+                                                        "exit-btn": {
+                                                            "attributes": {
+                                                                "visible": true
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "CCMenu",
+                    "id": "ui-hide-on",
+                    "attributes": {
+                        "ignore-anchor-pos": false,
+                        "z-order": 1
+                    },
+                    "children": {
+                        "new": [
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "hide-ui-on",
+                                "attributes": {
+                                    "sprite-frame": "hideBtn_001.png",
+                                    "position": {
+                                        "anchor": "top-left",
+                                        "x": 60,
+                                        "y": -22.5
+                                    },
+                                    "scale": 1,
+                                    "base-scale": 1
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "parent": {
+                                            "parent": {
+                                                "children": {
+                                                    "node": {
+                                                        "nova-right-creator": {
+                                                            "attributes": {
+                                                                "visible": false
+                                                            }
+                                                        },
+                                                        "nova-left-creator": {
+                                                            "attributes": {
+                                                                "visible": false
+                                                            }
+                                                        },
+                                                        "ui-hide-off": {
+                                                            "attributes": {
+                                                                "visible": true
+                                                            }
+                                                        },
+                                                        "ui-hide-on": {
+                                                            "attributes": {
+                                                                "visible": false
+                                                            }
+                                                        },
+                                                        "top-right-menu": {
+                                                            "attributes": {
+                                                                "visible": false
+                                                            }
+                                                        },
+                                                        "bottom-right-menu": {
+                                                            "attributes": {
+                                                                "visible": false
+                                                            }
+                                                        },
+                                                        "bottom-left-menu": {
+                                                            "attributes": {
+                                                                "visible": false
+                                                            }
+                                                        },
+                                                        "exit-menu": {
+                                                            "attributes": {
+                                                                "visible": false
+                                                            }
+                                                        },
+                                                        "exit-btn": {
+                                                            "attributes": {
+                                                                "visible": false
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "type": "CCLabelBMFont",
+                                "id": "hide-ui-label",
+                                "attributes": {
+                                    "font": "bigFont.fnt",
+                                    "position": {
+                                        "anchor": "top-left",
+                                        "x": 110,
+                                        "y": -22.5
+                                    },
+                                    "text":"Hide Ui",
+                                    "scale": 0.5
+                                }
+                            }
+                        ]
+                    }
+                }
+			],
+            "node": {
+                "top-left-corner": {
+                    "attributes": {
+                        "visible": false
+                    }
+                },
+                "bottom-left-corner": {
+                    "attributes": {
+                        "visible": false
+                    }
+                },
+                "creator-buttons-menu": {
+                    "attributes":  {
+                        "visible": false
+                    }
+                },
+                "bottom-left-menu": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "bottom-center",
+                            "x": 0,
+                            "y": 80
+                        },
+                        "layout": {
+                            "axis": "row",
+                            "axis-alignment": "center"
+                        },
+                        "content-size": {
+                            "width": 160,
+                            "height": 52.5
+                        },
+                        "anchor-point": {
+                            "x": 0.5,
+                            "y": 0.5
+                        }
+                    }
+                },
+                "top-right-menu": {
+                    "attributes": {
+                        "update-layout": "parent",
+                        "position": {
+                            "anchor": "bottom-center",
+                            "x": 0,
+                            "y": 30
+                        },
+                        "layout": {
+                            "axis": "row",
+                            "axis-alignment": "center"
+                        },
+                        "content-size": {
+                            "width": 284,
+                            "height": 54
+                        },
+                        "anchor-point": {
+                            "x": 0.5,
+                            "y": 0.5
+                        }
+                    },
+                    "children": {
+                        "node": {
+                            "vault-button": {
+                                "attributes": {
+                                    "remove": true
+                                }
+                            },
+                            "raydeeux.qiblafinder/qibla-finder-button": {
+                                "attributes": {
+                                    "scale": 0.8,
+                                    "base-scale": 0.8
+                                }
+                            },
+                            "demon-progression-button": {
+                                "attributes": {
+                                    "scale": 1.15
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

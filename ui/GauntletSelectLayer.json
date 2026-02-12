@@ -1,0 +1,47 @@
+{
+    "children": {
+        "node": {   
+            "bottom-left-corner": {
+                "attributes": {
+                    "color": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255
+                    }
+                }
+            },
+            "bottom-right-corner": {
+                "attributes": {
+                    "color": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255
+                    }
+                }
+            },
+            "top-left-corner": {
+                "attributes": {
+                    "color": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255
+                    }
+                }
+            },
+            "top-right-corner": {
+                "attributes": {
+                    "color": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255
+                    }
+                }
+            },
+            "ground-layer": {
+                "attributes": {
+                    "visible": false
+                }
+            }
+        }
+    }
+}

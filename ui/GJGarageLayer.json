@@ -1,0 +1,1739 @@
+{
+    "after-transition": {
+        "children": {
+            "node": {
+                "top-left-corner": {
+                    "attributes": {
+                        "visible": false
+                    }
+                },
+                "bottom-left-corner": {
+                    "attributes": {
+                        "visible": false
+                    }
+                },
+                "bottom-right-corner": {
+                    "attributes": {
+                        "visible": false
+                    }
+                },
+                "navdot-menu": {
+                    "attributes": {
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0,
+                                        "value": {
+                                            "x": 0,
+                                            "y": -50
+                                        }
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.3,
+                                        "value": {
+                                            "x": 0,
+                                            "y": 50
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "prev-page-menu": {
+                    "attributes": {
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0,
+                                        "value": {
+                                            "x": -120,
+                                            "y": 0
+                                        }
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": 120,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "next-page-menu": {
+                    "attributes": {
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0,
+                                        "value": {
+                                            "x": 120,
+                                            "y": 0
+                                        }
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -120,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "category-menu": {
+                    "children": {
+                        "index": [
+                            {
+                                "type": "CCMenuItemToggler",
+                                "index": 0,
+                                "attributes": {
+                                    "scale": 0,
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.05,
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.5,
+                                                    "value": 1,
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemToggler",
+                                "index": 1,
+                                "attributes": {
+                                    "scale": 0,
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.08,
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.5,
+                                                    "value": 1,
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemToggler",
+                                "index": 2,
+                                "attributes": {
+                                    "scale": 0,
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.11,
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.5,
+                                                    "value": 1,
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemToggler",
+                                "index": 3,
+                                "attributes": {
+                                    "scale": 0,
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.14,
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.5,
+                                                    "value": 1,
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemToggler",
+                                "index": 4,
+                                "attributes": {
+                                    "scale": 0,
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.17,
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.5,
+                                                    "value": 1,
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemToggler",
+                                "index": 5,
+                                "attributes": {
+                                    "scale": 0,
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.2,
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.5,
+                                                    "value": 1,
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemToggler",
+                                "index": 6,
+                                "attributes": {
+                                    "scale": 0,
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.23,
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.5,
+                                                    "value": 1,
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemToggler",
+                                "index": 7,
+                                "attributes": {
+                                    "scale": 0,
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.26,
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.5,
+                                                    "value": 1,
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemToggler",
+                                "index": 8,
+                                "attributes": {
+                                    "scale": 0,
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.29,
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.5,
+                                                    "value": 1,
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemToggler",
+                                "index": 9,
+                                "attributes": {
+                                    "scale": 0,
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.32,
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.5,
+                                                    "value": 1,
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemToggler",
+                                "index": 10,
+                                "attributes": {
+                                    "scale": 0,
+                                    "actions": [
+                                        {
+                                            "type": "Sequence",
+                                            "actions": [
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.35,
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "type": "ScaleTo",
+                                                    "duration": 0.5,
+                                                    "value": 1,
+                                                    "easing": "BackOut"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                "icon-selection-bar": {
+                    "children": {
+                        "all": {
+                            "children": {
+                                "all": {
+                                    "children": {
+                                        "all": {
+                                            "children": {
+                                                "all": {
+                                                    "children": {
+                                                        "index": [
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 0,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.2,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 1,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.23,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 2,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.26,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 3,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.29,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 4,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.32,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 5,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.35,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 6,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.38,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 7,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.41,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 8,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.44,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 9,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.47,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 10,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 11,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.53,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 12,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.2,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 13,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.23,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 14,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.26,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 15,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.29,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 16,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.32,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 17,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.35,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 18,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.38,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 19,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.41,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 20,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.44,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 21,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.47,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 22,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 23,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.53,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 24,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.2,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 25,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.23,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 26,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.26,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 27,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.29,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 28,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.32,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 29,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.35,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 30,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.38,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 31,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.41,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 32,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.44,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 33,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.47,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 34,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "CCMenuItemSpriteExtra",
+                                                                "index": 35,
+                                                                "attributes": {
+                                                                    "scale": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.53,
+                                                                                    "value": 0
+                                                                                },
+                                                                                {
+                                                                                    "type": "ScaleTo",
+                                                                                    "duration": 0.5,
+                                                                                    "value": 1,
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "cursor-1": {
+                    "attributes": {
+                        "scale": 0,
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "ScaleTo",
+                                        "duration": 0.5,
+                                        "value": 0
+                                    },
+                                    {
+                                        "type": "ScaleTo",
+                                        "duration": 0.5,
+                                        "value": 0.85,
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "stars-icon": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "self",
+                            "x": 150,
+                            "y": 0
+                        },
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.05
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -150,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "stars-label": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "self",
+                            "x": 150,
+                            "y": 0
+                        },
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.05
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -150,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "moons-icon": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "self",
+                            "x": 150,
+                            "y": 0
+                        },
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.08
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -150,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "moons-label": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "self",
+                            "x": 150,
+                            "y": 0
+                        },
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.08
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -150,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "coins-icon": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "self",
+                            "x": 150,
+                            "y": 0
+                        },
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.11
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -150,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "coins-label": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "self",
+                            "x": 150,
+                            "y": 0
+                        },
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.11
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -150,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "user-coins-icon": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "self",
+                            "x": 150,
+                            "y": 0
+                        },
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.14
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -150,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "user-coins-label": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "self",
+                            "x": 150,
+                            "y": 0
+                        },
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.14
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -150,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "orbs-icon": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "self",
+                            "x": 150,
+                            "y": 0
+                        },
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.17
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -150,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "orbs-label": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "self",
+                            "x": 150,
+                            "y": 0
+                        },
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.17
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -150,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "diamonds-icon": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "self",
+                            "x": 150,
+                            "y": 0
+                        },
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.2
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -150,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "diamonds-label": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "self",
+                            "x": 150,
+                            "y": 0
+                        },
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.2
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -150,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "diamond-shards-icon": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "self",
+                            "x": 150,
+                            "y": 0
+                        },
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.23
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -150,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "diamond-shards-label": {
+                    "attributes": {
+                        "position": {
+                            "anchor": "self",
+                            "x": 150,
+                            "y": 0
+                        },
+                        "actions": [
+                            {
+                                "type": "Sequence",
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.23
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 0.4,
+                                        "value": {
+                                            "x": -150,
+                                            "y": 0
+                                        },
+                                        "easing": "BackOut"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

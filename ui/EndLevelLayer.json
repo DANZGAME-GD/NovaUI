@@ -1,0 +1,11 @@
+{
+    "children": {
+        "query": {
+            "main-layer > end-text": {
+                "attributes": {
+                    "text": "{arr('CBF Detected! JK', 'Try Other Level Now', 'Robtop When Versus Mode', 'HOW??? ' + username + '!', 'How You Do That ' + username + '?', 'Check Steam')[randomInt(0,5)]}"
+                }
+            }
+        }
+    }
+}
