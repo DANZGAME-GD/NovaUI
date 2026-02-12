@@ -49,6 +49,6 @@ jobs:
           tag_name: ${{ steps.version.outputs.tag }}
           name: Release v${{ steps.version.outputs.version }}
           body: |
-            ## 🚀 Changelog
+            # ChangeLog
             ${{ steps.changelog.outputs.log }}
           files: NovaUi.zip
