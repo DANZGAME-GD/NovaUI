@@ -10,5 +10,9 @@
     "1.1.7": [
         "Enhanced compatibility with latest game version",
         "Optimized resource usage for smoother experience "
+    ],
+    "1.1.8": [
+        "Added new icon sets",
+        "Fixed bugs related to menu navigation"
     ]
 }
