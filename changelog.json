@@ -2,5 +2,9 @@
     "1.1.5": [
         "Added new button styles",
         "Improved performance on loading screens"
+    ],
+    "1.1.6": [
+        "Fixed minor UI glitches",
+        "Updated color schemes for better visibility"
     ]
 }
