@@ -38,4 +38,4 @@ jobs:
         with:
           tag_name: ${{ steps.version.outputs.version }}
           name: Release ${{ steps.version.outputs.version }}
-          files: Nova Ui.zip
+          files: Nova Ui${{ steps.version.outputs.version }}.zip
