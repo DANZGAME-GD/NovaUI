@@ -54,5 +54,9 @@
     "1.1.18": [
         "Final review and adjustments to packaging process",
         "Confirmed successful release of both Nova Ui and Nova Ui: Extension"
+    ],
+    "1.1.19": [
+        "Minor tweaks to workflow for future releases",
+        "Ensured all relevant files are properly documented in changelog"
     ]
 }
