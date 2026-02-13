@@ -18,5 +18,9 @@
     "1.1.9": [
         "Improved transition effects",
         "Fixed layering issues in certain UI components"
+    ],
+    "1.1.10": [
+        "Updated blending modes for better visual effects",
+        "Fixed color rendering issues in CCTransitionFade"
     ]
 }
