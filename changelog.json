@@ -42,5 +42,9 @@
     "1.1.15": [
         "Added missing files to the extension package",
         "Improved GitHub Actions workflow for better automation"
+    ],
+    "1.1.16": [
+        "Refined exclusion rules in packaging script",
+        "Ensured both main and extension packs are included in release"
     ]
 }
