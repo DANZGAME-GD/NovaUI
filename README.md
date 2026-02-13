@@ -5,6 +5,6 @@ Nova UI is a name derived from the word innovation, which means developing ideas
 
 ## 📦 Downloads
 
-NovaUi.zip: DOWNLOAD_NOVAUI
+NovaUi.zip: 0
 
-NovaUi_Extension.zip: DOWNLOAD_EXTENSION
+NovaUi_Extension.zip: 0
