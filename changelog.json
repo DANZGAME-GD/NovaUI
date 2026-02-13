@@ -1,56 +1,4 @@
 {
-    "1.1.5": [
-        "Added new button styles",
-        "Improved performance on loading screens"
-    ],
-    "1.1.6": [
-        "Fixed minor UI glitches",
-        "Updated color schemes for better visibility"
-    ],
-    "1.1.7": [
-        "Enhanced compatibility with latest game version",
-        "Optimized resource usage for smoother experience "
-    ],
-    "1.1.8": [
-        "Added new icon sets",
-        "Fixed bugs related to menu navigation"
-    ],
-    "1.1.9": [
-        "Improved transition effects",
-        "Fixed layering issues in certain UI components"
-    ],
-    "1.1.10": [
-        "Updated blending modes for better visual effects",
-        "Fixed color rendering issues in CCTransitionFade"
-    ],
-    "1.1.11": [
-        "Fixed animation frame sequence for GJ_gradientBG.png",
-        "Improved overall UI responsiveness"
-    ],
-    "1.1.12": [
-        "Added Nova Ui: Extension pack for a streamlined version",
-        "Fixed packaging issues in the GitHub workflow"
-    ],
-    "1.1.13": [
-        "Corrected version number in pack.json",
-        "Ensured exclusion of unnecessary files in extension package"
-    ],
-    "1.1.14": [
-        "Finalized extension pack setup",
-        "Updated changelog and documentation"
-    ],
-    "1.1.15": [
-        "Added missing files to the extension package",
-        "Improved GitHub Actions workflow for better automation"
-    ],
-    "1.1.16": [
-        "Refined exclusion rules in packaging script",
-        "Ensured both main and extension packs are included in release"
-    ],
-    "1.1.17": [
-        "Updated changelog to reflect recent changes",
-        "Verified integrity of both main and extension zip files"
-    ],
     "1.1.18": [
         "Final review and adjustments to packaging process",
         "Confirmed successful release of both Nova Ui and Nova Ui: Extension"
@@ -74,5 +22,9 @@
     "1.1.23": [
         "Updated pack.json version to 1.1.23",
         "Maintained consistency across all release documentation"
+    ],
+    "1.1.24": [
+        "Updated pack.json version to 1.1.24",
+        "Prepared for next release cycle with all necessary documentation"
     ]
 }
