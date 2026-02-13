@@ -5,5 +5,5 @@ Nova UI is a name derived from the word innovation, which means developing ideas
 
 ## 📦 Downloads
 
-![NovaUi](https://img.shields.io/github/downloads/DANZGAME-GD/NovaUi/NovaUi.zip/total?style=for-the-badge&color=purple)
-![Extension](https://img.shields.io/github/downloads/DANZGAME-GD/NovaUi/NovaUi_Extension.zip/total?style=for-the-badge&color=orange)
+![NovaUi](https://img.shields.io/github/downloads/DANZGAME-GD/NovaUi/releases/NovaUi.zip/total?style=for-the-badge&color=purple)
+![Extension](https://img.shields.io/github/downloads/DANZGAME-GD/NovaUi/releases/NovaUi_Extension.zip/total?style=for-the-badge&color=orange)

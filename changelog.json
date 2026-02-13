@@ -46,5 +46,9 @@
     "1.1.16": [
         "Refined exclusion rules in packaging script",
         "Ensured both main and extension packs are included in release"
+    ],
+    "1.1.17": [
+        "Updated changelog to reflect recent changes",
+        "Verified integrity of both main and extension zip files"
     ]
 }
