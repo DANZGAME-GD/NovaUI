@@ -50,5 +50,9 @@
     "1.1.17": [
         "Updated changelog to reflect recent changes",
         "Verified integrity of both main and extension zip files"
+    ],
+    "1.1.18": [
+        "Final review and adjustments to packaging process",
+        "Confirmed successful release of both Nova Ui and Nova Ui: Extension"
     ]
 }
