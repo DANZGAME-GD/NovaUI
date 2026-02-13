@@ -26,5 +26,9 @@
     "1.1.11": [
         "Fixed animation frame sequence for GJ_gradientBG.png",
         "Improved overall UI responsiveness"
+    ],
+    "1.1.12": [
+        "Added Nova Ui: Extension pack for a streamlined version",
+        "Fixed packaging issues in the GitHub workflow"
     ]
 }
