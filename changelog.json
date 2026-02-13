@@ -14,5 +14,9 @@
     "1.1.8": [
         "Added new icon sets",
         "Fixed bugs related to menu navigation"
+    ],
+    "1.1.9": [
+        "Improved transition effects",
+        "Fixed layering issues in certain UI components"
     ]
 }

@@ -16,39 +16,56 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Get version from pack.json
-        id: version
+      - name: Get name and version from pack.json
+        id: meta
         run: |
+          NAME=$(jq -r '.name' pack.json)
           VERSION=$(jq -r '.version' pack.json)
+
+          SAFE_NAME=$(echo "$NAME" | tr ' ' '_')
+
+          echo "name=$NAME" >> $GITHUB_OUTPUT
+          echo "safe_name=$SAFE_NAME" >> $GITHUB_OUTPUT
           echo "version=$VERSION" >> $GITHUB_OUTPUT
           echo "tag=v$VERSION" >> $GITHUB_OUTPUT
 
       - name: Get changelog for this version
         id: changelog
         run: |
-          VERSION=${{ steps.version.outputs.version }}
-          CHANGELOG=$(jq -r --arg v "$VERSION" '.[$v][]' changelog.json | sed 's/^/- /')
+          VERSION=${{ steps.meta.outputs.version }}
+          CHANGELOG=$(jq -r --arg v "$VERSION" '.[$v][]' changelog.json 2>/dev/null | sed 's/^/- /')
+
+          if [ -z "$CHANGELOG" ]; then
+            CHANGELOG="- No changelog available."
+          fi
+
           echo "log<<EOF" >> $GITHUB_OUTPUT
           echo "$CHANGELOG" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Create ZIP file
         run: |
-          zip -r NovaUi.zip . -x ".git/*"
+          zip -r "${{ steps.meta.outputs.safe_name }}.zip" . -x ".git/*"
 
-      - name: Create Tag
+      - name: Create Tag (if not exists)
         run: |
+          git fetch --tags
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git tag ${{ steps.version.outputs.tag }}
-          git push origin ${{ steps.version.outputs.tag }}
+
+          if git rev-parse ${{ steps.meta.outputs.tag }} >/dev/null 2>&1; then
+            echo "Tag already exists"
+          else
+            git tag ${{ steps.meta.outputs.tag }}
+            git push origin ${{ steps.meta.outputs.tag }}
+          fi
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ steps.version.outputs.tag }}
-          name: Release v${{ steps.version.outputs.version }}
+          tag_name: ${{ steps.meta.outputs.tag }}
+          name: ${{ steps.meta.outputs.name }} v${{ steps.meta.outputs.version }}
           body: |
-            # ChangeLog
+            # Changelog
             ${{ steps.changelog.outputs.log }}
-          files: NovaUi.zip
+          files: ${{ steps.meta.outputs.safe_name }}.zip
