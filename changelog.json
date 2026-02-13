@@ -38,5 +38,9 @@
     "1.1.14": [
         "Finalized extension pack setup",
         "Updated changelog and documentation"
+    ],
+    "1.1.15": [
+        "Added missing files to the extension package",
+        "Improved GitHub Actions workflow for better automation"
     ]
 }

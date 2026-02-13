@@ -38,8 +38,6 @@ jobs:
 
           rsync -av . temp_pack \
             --exclude ".git" \
-            --exclude "animate_bg" \
-            --exclude "GJ_gradientBG.png.animate.json" \
             --exclude "NovaUi_Extension.zip" \
             --exclude "temp_pack" \
             --exclude ".github" \
@@ -48,7 +46,7 @@ jobs:
           zip -r ../NovaUi.zip .
           cd ..
           rm -rf temp_pack
-          
+
       - name: Create Extension Zip
         run: |
           mkdir temp_ext
