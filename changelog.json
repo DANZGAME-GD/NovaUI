@@ -22,5 +22,9 @@
     "1.1.10": [
         "Updated blending modes for better visual effects",
         "Fixed color rendering issues in CCTransitionFade"
+    ],
+    "1.1.11": [
+        "Fixed animation frame sequence for GJ_gradientBG.png",
+        "Improved overall UI responsiveness"
     ]
 }

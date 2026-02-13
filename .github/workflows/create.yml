@@ -41,9 +41,10 @@ jobs:
           mkdir temp_ext
 
           rsync -av . temp_ext \
-            --exclude "git" \
+            --exclude ".git" \
             --exclude "animate_bg" \
-            --exclude "GJ_gradientBG.png.animate.json"
+            --exclude "GJ_gradientBG.png.animate.json" \
+            --exclude "NovaUi.zip" 
 
           jq '.name = "Nova Ui: Extension"' temp_ext/pack.json > temp_ext/pack_temp.json
           mv temp_ext/pack_temp.json temp_ext/pack.json
