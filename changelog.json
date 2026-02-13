@@ -34,5 +34,9 @@
     "1.1.13": [
         "Corrected version number in pack.json",
         "Ensured exclusion of unnecessary files in extension package"
+    ],
+    "1.1.14": [
+        "Finalized extension pack setup",
+        "Updated changelog and documentation"
     ]
 }

@@ -34,13 +34,21 @@ jobs:
 
       - name: Create ZIP file
         run: |
-          zip -r NovaUi.zip . -x ".git/*"
-          rsync -av NovaUi.zip NovaUi.zip \
-            --exclude ".git/*" \
-            --exclude "NovaUi_Extension.zip" \
-            --exclude ".github/*" \
-            --exclude "changelog.json"
+          mkdir temp_pack
 
+          rsync -av . temp_pack \
+            --exclude ".git" \
+            --exclude "animate_bg" \
+            --exclude "GJ_gradientBG.png.animate.json" \
+            --exclude "NovaUi_Extension.zip" \
+            --exclude "temp_pack" \
+            --exclude ".github" \
+            --exclude "changelog.json"
+          cd temp_pack
+          zip -r ../NovaUi.zip .
+          cd ..
+          rm -rf temp_pack
+          
       - name: Create Extension Zip
         run: |
           mkdir temp_ext
