@@ -66,5 +66,9 @@
     "1.1.21": [
         "Streamlined packaging process for both main and extension packs",
         "Enhanced documentation for users regarding the two pack options"
+    ],
+    "1.1.22": [
+        "Finalized version 1.1.22 release",
+        "Ensured all changes are accurately reflected in changelog"
     ]
 }
