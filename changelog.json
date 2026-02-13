@@ -30,5 +30,9 @@
     "1.1.12": [
         "Added Nova Ui: Extension pack for a streamlined version",
         "Fixed packaging issues in the GitHub workflow"
+    ],
+    "1.1.13": [
+        "Corrected version number in pack.json",
+        "Ensured exclusion of unnecessary files in extension package"
     ]
 }

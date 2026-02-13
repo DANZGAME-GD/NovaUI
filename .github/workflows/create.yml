@@ -35,7 +35,7 @@ jobs:
       - name: Create ZIP file
         run: |
           zip -r NovaUi.zip . -x ".git/*"
-          rysnc -av NovaUi.zip NovaUi.zip \
+          rsync -av NovaUi.zip NovaUi.zip \
             --exclude ".git/*" \
             --exclude "NovaUi_Extension.zip" \
             --exclude ".github/*" \
