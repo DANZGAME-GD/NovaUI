@@ -168,6 +168,52 @@
                 "attributes": {
                     "ignore-anchor-pos": false
                 }
+            },
+            {
+                "type": "CCLayerColor",
+                "id": "layer-intro",
+                "attributes": {
+                    "color": "#1B1B1B",
+                    "scale": {
+                        "fit": {
+                            "relative": "screen"
+                        }
+                    },
+                    "position": {
+                        "anchor": {
+                            "to": "bottom-left",
+                            "relative": "screen"
+                        },
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                "children": {
+                    "new": [
+                        {
+                            "type": "CCMenuItemSpriteExtra",
+                            "id": "intro-button",
+                            "attributes": {
+                                "sprite": "GJ_longBtn04_001.png",
+                                "scale": 1,
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 0,
+                                    "y": -50
+                                }
+                            },
+                            "event": {
+                                "on-activate": {
+                                    "parent": {
+                                        "attributes": {
+                                            "visible": false
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         ],
         "node": {
