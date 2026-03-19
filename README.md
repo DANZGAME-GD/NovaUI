@@ -9,7 +9,7 @@
 
 ## Must Download Mods
 * [Node IDs](https://geode-sdk.org/mods/geode.node-ids)
-* [Pages Api](https://geode-sdk.org/mods/alphalaneous.pages_api)
+* [Pages Api](https://geode-sdk.org/mods/raydeeux.pages_api)
 * [ImagePlus](https://geode-sdk.org/mods/prevter.imageplus)
 * [Menu Shader](https://geode-sdk.org/mods/cgytrus.menu-shaders)
 * [Texture Loader](https://geode-sdk.org/mods/geode.texture-loader)
