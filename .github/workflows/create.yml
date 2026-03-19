@@ -41,7 +41,8 @@ jobs:
             --exclude "NovaUi_Extension.zip" \
             --exclude "temp_pack" \
             --exclude ".github" \
-            --exclude "changelog.json"
+            --exclude "changelog.json" \
+            --exclude "README.md"
           cd temp_pack
           zip -r ../NovaUi.zip .
           cd ..
@@ -58,7 +59,8 @@ jobs:
             --exclude "NovaUi.zip" \
             --exclude "temp_ext" \
             --exclude ".github" \
-            --exclude "changelog.json"
+            --exclude "changelog.json" \
+            --exclude "README.md"
 
           jq '.name = "Nova Ui: Extension"' temp_ext/pack.json > temp_ext/pack_temp.json
           mv temp_ext/pack_temp.json temp_ext/pack.json
