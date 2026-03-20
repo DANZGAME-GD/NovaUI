@@ -1,0 +1,66 @@
+{
+    "children": {
+        "index": [
+            {
+                "type": "CCLayer",
+                "index": 0,
+                "children": {
+                    "new": [
+                        {
+                            "type": "CCMenu",
+                            "id": "restart-menu",
+                            "attributes": {
+                                "z-order": 1,
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "content-size": {
+                                    "width": 440,
+                                    "height": 290
+                                },
+                                "ignore-anchor-pos": false
+                            },
+                            "children": {
+                                "new": [
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "id": "restart-button",
+                                        "attributes": {
+                                            "sprite-frame": "GJ_infoIcon_001.png",
+                                            "position": {
+                                                "anchor": "top-right",
+                                                "x": -20,
+                                                "y": -20
+                                            },
+                                            "scale": 1
+                                        },
+                                        "event": {
+                                            "on-activate": {
+                                                "children": {
+                                                    "new": [
+                                                        {
+                                                            "type": "Alert",
+                                                            "id": "restart-alert",
+                                                            "attributes": {
+                                                                "title": "Restart Needed!",
+                                                                "description": "This texture pack uses the <cy>Happy Texture</c> Mod to work. Restart <cf>Geode</c> to use it.",
+                                                                "button-text": "Ok",
+                                                                "show": true
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
