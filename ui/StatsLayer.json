@@ -1,0 +1,22 @@
+{
+    "children": {
+        "node": {
+            "main-layer": {
+                "children": {
+                    "node": {
+                        "background": {
+                            "attributes": {
+                                "opacity": 165,
+                                "color": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
