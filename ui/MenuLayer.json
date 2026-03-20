@@ -93,11 +93,107 @@
                                     "updates-available": {
                                         "attributes": {
                                             "position": {
-                                                "anchor": "center",
-                                                "x": 17,
-                                                "y": 5
+                                                "anchor": "center-right",
+                                                "x": -40,
+                                                "y": 0
                                             },
-                                            "scale": 0.3
+                                            "scale": 0.8,
+                                            "opacity": 0
+                                        },
+                                        "children": {
+                                            "index": [
+                                                {
+                                                    "type": "CCLabelBMFont",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "font": "gjFont52.fnt",
+                                                        "scale": 0.45
+                                                    }
+                                                }
+                                            ],
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "update-icon",
+                                                    "attributes": {
+                                                        "sprite-frame": "geode.loader/update.png",
+                                                        "scale": 0.52,
+                                                        "position": {
+                                                            "anchor": "center",
+                                                            "x": 20,
+                                                            "y": 0
+                                                        },
+                                                        "actions": [
+                                                            {
+                                                                "type": "Sequence",
+                                                                "actions": [
+                                                                    {
+                                                                        "type": "RotateBy",
+                                                                        "duration": 2,
+                                                                        "value": 75,
+                                                                        "easing": "ExponentialInOut"
+                                                                    }
+                                                                ],
+                                                                "repeat": true
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "multiple-notifications": {
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "center-right",
+                                                "x": -40,
+                                                "y": 0
+                                            },
+                                            "scale": 0.8,
+                                            "opacity": 0
+                                        },
+                                        "children": {
+                                            "index": [
+                                                {
+                                                    "type": "CCLabelBMFont",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "font": "gjFont52.fnt",
+                                                        "scale": 0.45,
+                                                        "color": "#FF5F5FFF"
+                                                    }
+                                                }
+                                            ],
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "update-icon",
+                                                    "attributes": {
+                                                        "sprite-frame": "geode.loader/update.png",
+                                                        "scale": 0.52,
+                                                        "position": {
+                                                            "anchor": "center",
+                                                            "x": 18,
+                                                            "y": 0
+                                                        },
+                                                        "color": "#FF4C4CFF",
+                                                        "actions": [
+                                                            {
+                                                                "type": "Sequence",
+                                                                "actions": [
+                                                                    {
+                                                                        "type": "RotateBy",
+                                                                        "duration": 2,
+                                                                        "value": 75,
+                                                                        "easing": "ExponentialInOut"
+                                                                    }
+                                                                ],
+                                                                "repeat": true
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
                                         }
                                     },
                                     "errors-found": {
@@ -133,7 +229,7 @@
                             "type": "CCSprite",
                             "id": "geode-icon",
                             "attributes": {
-                                "sprite": "Danz_asset/geode_logo.png",
+                                "sprite-frame": "Danz_asset/geode_logo.png",
                                 "scale": 0.425,
                                 "position": {
                                     "anchor": "center",
@@ -168,52 +264,6 @@
                 "attributes": {
                     "ignore-anchor-pos": false
                 }
-            },
-            {
-                "type": "CCLayerColor",
-                "id": "layer-intro",
-                "attributes": {
-                    "color": "#1B1B1B",
-                    "scale": {
-                        "fit": {
-                            "relative": "screen"
-                        }
-                    },
-                    "position": {
-                        "anchor": {
-                            "to": "bottom-left",
-                            "relative": "screen"
-                        },
-                        "x": 0,
-                        "y": 0
-                    }
-                },
-                "children": {
-                    "new": [
-                        {
-                            "type": "CCMenuItemSpriteExtra",
-                            "id": "intro-button",
-                            "attributes": {
-                                "sprite": "GJ_longBtn04_001.png",
-                                "scale": 1,
-                                "position": {
-                                    "anchor": "center",
-                                    "x": 0,
-                                    "y": -50
-                                }
-                            },
-                            "event": {
-                                "on-activate": {
-                                    "parent": {
-                                        "attributes": {
-                                            "visible": false
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         ],
         "node": {
@@ -224,15 +274,22 @@
             },
             "close-menu": {
                 "attributes": {
-                    "visible": false
-                }
-            },
-            "main-menu-bg": {
-                "children": {
-                    "all": {
-                        "attributes": {
-                            "visible": false
-                        }
+                    "position": {
+                        "anchor": "top-right",
+                        "x": -15,
+                        "y": -30
+                    },
+                    "anchor-point": {
+                        "x": 1,
+                        "y": 0.5
+                    },
+                    "content-size": {
+                        "width": 200,
+                        "height": 50
+                    },
+                    "layout": {
+                        "axis-alignment": "end",
+                        "axis": "row"
                     }
                 }
             }
@@ -370,7 +427,7 @@
                                                     "type": "Popup",
                                                     "id": "info-alert",
                                                     "attributes": {
-                                                        "sprite": "GJ_square01.png",
+                                                        "sprite": "geode.loader/GE_square03.png",
                                                         "popup-size": {
                                                             "width": 430,
                                                             "height": 260
@@ -678,12 +735,12 @@
                                                                             "id": "changelog-text",
                                                                             "attributes": {
                                                                                 "font": "bigFont.fnt",
-                                                                                "text": "Changelog\n- Added: Level Password\n- Added: Badge In Credits Info \n- Added: UI Animation In \n  Icon Layer\n- Change: Texture Pack Icon\n- Update: Loading Layer\n- Update: Info Menu",
+                                                                                "text": "Changelog\n- Added: Alert Button In \n  Texture Layer\n- Added: Play Level Animation\n- Added: UI Animation In \n  Shop Layer\n- Added: Ui Animation in \n  Gauntlet Layer\n- Change: Editor Asset\n- Update: Credits Layer\n- Update: Geode Button\nMore....",
                                                                                 "scale": 0.4,
                                                                                 "position": {
                                                                                     "anchor": "center-right",
                                                                                     "x": -115,
-                                                                                    "y": -25
+                                                                                    "y": -40
                                                                                 }
                                                                             }
                                                                         },
@@ -869,7 +926,7 @@
                                                                                 "sprite": "Danz_asset/icon/alphalaneous.png",
                                                                                 "position": {
                                                                                     "anchor": "center",
-                                                                                    "x": -100,
+                                                                                    "x": -150,
                                                                                     "y": 40
                                                                                 },
                                                                                 "scale": 1.2,
@@ -970,7 +1027,7 @@
                                                                                 "sprite": "Danz_asset/icon/latterrarity70.png",
                                                                                 "position": {
                                                                                     "anchor": "center",
-                                                                                    "x": 0,
+                                                                                    "x": -50,
                                                                                     "y": 40
                                                                                 },
                                                                                 "scale": 1.2,
@@ -1076,7 +1133,7 @@
                                                                                 },
                                                                                 "position": {
                                                                                     "anchor": "center",
-                                                                                    "x": 100,
+                                                                                    "x": 50,
                                                                                     "y": 40
                                                                                 },
                                                                                 "scale": 1.2,
@@ -1218,8 +1275,8 @@
                                                                                 },
                                                                                 "position": {
                                                                                     "anchor": "center",
-                                                                                    "x": -150,
-                                                                                    "y": -40
+                                                                                    "x": 150,
+                                                                                    "y": 40
                                                                                 },
                                                                                 "scale": 1.2,
                                                                                 "base-scale": 1.2
@@ -1337,7 +1394,7 @@
                                                                                 "sprite": "Danz_asset/icon/luar77.png",
                                                                                 "position": {
                                                                                     "anchor": "center",
-                                                                                    "x": -50,
+                                                                                    "x": -150,
                                                                                     "y": -40
                                                                                 },
                                                                                 "scale": 1.2,
@@ -1438,7 +1495,7 @@
                                                                                 "sprite": "Danz_asset/icon/boomyboomer.png",
                                                                                 "position": {
                                                                                     "anchor": "center",
-                                                                                    "x": 50,
+                                                                                    "x": -50,
                                                                                     "y": -40
                                                                                 },
                                                                                 "scale": 1.2,
@@ -1539,7 +1596,7 @@
                                                                                 "sprite": "Danz_asset/icon/chessdash.png",
                                                                                 "position": {
                                                                                     "anchor": "center",
-                                                                                    "x": 150,
+                                                                                    "x": 50,
                                                                                     "y": -40
                                                                                 },
                                                                                 "scale": 1.2,
@@ -1622,6 +1679,107 @@
                                                                                         "attributes": {
                                                                                             "font": "goldFont.fnt",
                                                                                             "text": "ChessDash543",
+                                                                                            "position": {
+                                                                                                "anchor": "center",
+                                                                                                "x": 0,
+                                                                                                "y": 30
+                                                                                            },
+                                                                                            "scale": 0.45
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "type": "CCMenuItemSpriteExtra",
+                                                                            "id": "alkatreize",
+                                                                            "attributes": {
+                                                                                "sprite": "Danz_asset/icon/alkatreize.png",
+                                                                                "position": {
+                                                                                    "anchor": "center",
+                                                                                    "x": 150,
+                                                                                    "y": -40
+                                                                                },
+                                                                                "scale": 1.2,
+                                                                                "base-scale": 1.2
+                                                                            },
+                                                                            "event": {
+                                                                                "on-activate": {
+                                                                                    "attributes": {
+                                                                                        "link": {
+                                                                                            "type": "profile",
+                                                                                            "id": 5625235
+                                                                                        }
+                                                                                    },
+                                                                                    "parent": {
+                                                                                        "parent": {
+                                                                                            "parent": {
+                                                                                                "parent": {
+                                                                                                    "children": {
+                                                                                                        "node": {
+                                                                                                            "ProfilePage": {
+                                                                                                                "children": {
+                                                                                                                    "new": [
+                                                                                                                        {
+                                                                                                                            "type": "CCMenu",
+                                                                                                                            "id": "support-menu",
+                                                                                                                            "attributes": {
+                                                                                                                                "z-order": 1,
+                                                                                                                                "ignore-anchor-pos": false
+                                                                                                                            },"children": {
+                                                                                                                                "new": [
+                                                                                                                                    {
+                                                                                                                                        "type": "CCMenuItemSpriteExtra",
+                                                                                                                                        "id": "support",
+                                                                                                                                        "attributes": {
+                                                                                                                                            "sprite": "Danz_asset/badges/support.png",
+                                                                                                                                            "position": {
+                                                                                                                                                "anchor": "center",
+                                                                                                                                                "x": -86,
+                                                                                                                                                "y": 123
+                                                                                                                                            }
+                                                                                                                                        },
+                                                                                                                                        "event": {
+                                                                                                                                            "on-activate": {
+                                                                                                                                                "children": {
+                                                                                                                                                    "new": [
+                                                                                                                                                        {
+                                                                                                                                                            "type": "Alert",
+                                                                                                                                                            "id": "support-alert",
+                                                                                                                                                            "attributes": {
+                                                                                                                                                                "title": "Asset Editor",
+                                                                                                                                                                "description":"Credit To <cf>Alkatraize</c> For The Use Of The <cy>Asset Editor</c>",
+                                                                                                                                                                "button-text": "Ok",
+                                                                                                                                                                "show": true
+                                                                                                                                                            }
+                                                                                                                                                        }
+                                                                                                                                                    ]
+                                                                                                                                                }
+                                                                                                                                            }
+                                                                                                                                        }
+                                                                                                                                    }
+                                                                                                                                ]
+                                                                                                                            }
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "children": {
+                                                                                "new": [
+                                                                                    {
+                                                                                        "type": "CCLabelBMFont",
+                                                                                        "id": "alkatreize-label",
+                                                                                        "attributes": {
+                                                                                            "font": "goldFont.fnt",
+                                                                                            "text": "Alkatreize",
                                                                                             "position": {
                                                                                                 "anchor": "center",
                                                                                                 "x": 0,
@@ -1803,14 +1961,35 @@
                             },
                             {
                                 "type": "CCMenuItemSpriteExtra",
-                                "id": "my-youtube-btn",
+                                "id": "github-btn",
+                                "attributes": {
+                                    "sprite-frame": "geode.loader/github.png",
+                                    "scale": 0.9,
+                                    "base-scale": 0.9,
+                                    "position": {
+                                        "anchor": "bottom-right",
+                                        "x": 35,
+                                        "y": 30
+                                    }
+                                },
+                                "event": {
+                                    "on-activate": {
+                                        "attributes": {
+                                            "link": "https://github.com/DANZGAME-GD/NovaUI"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "type": "CCMenuItemSpriteExtra",
+                                "id": "danzgame-yt -btn",
                                 "attributes": {
                                     "sprite": "Danz_asset/Danz_yt.png",
                                     "scale": 0.4,
                                     "base-scale": 0.4,
                                     "position": {
                                         "anchor": "bottom-right",
-                                        "x": 35,
+                                        "x": 0,
                                         "y": 30
                                     }
                                 },
@@ -2417,12 +2596,12 @@
                 },
                 "social-media-menu": {
                     "attributes": {
-                        "visible": false
+                        "remove": true
                     }
                 },
                 "more-games-menu": {
                     "attributes": {
-                        "visible": false
+                        "remove": true
                     }
                 },
                 "profile-menu": {
@@ -2439,19 +2618,23 @@
                         "anchor": "top-left",
                         "scale": 0.6,
                         "position": {
-                            "x": 112,
+                            "x": 75,
                             "y": 284
+                        },
+                        "anchor-point": {
+                            "x": 0,
+                            "y": 0.5
                         }
                     }
                 },
                 "main-menu": {
                     "attributes": {
-                        "visible": false
+                        "remove": true
                     }
                 },
                 "main-title": {
                     "attributes": {
-                        "visible": false
+                        "remove": true
                     }
                 },
                 "bottom-menu": {
@@ -2473,7 +2656,7 @@
 					        },
 					        "settings-button": {
 					            "attributes": {
-					                "visible": true
+					                "remove": true
 					            }
 					        },
 					        "stats-button": {
@@ -2503,18 +2686,6 @@
                         }
                     }
                 },
-                "close-menu": {
-                    "attributes": {
-                        "position": {
-                            "anchor": "top-right",
-                            "x": -115,
-                            "y": -30
-                        },
-                        "layout": {
-                            "axis-alignment": "end"
-                        }
-                    }
-                },
                 "character-select-hint": {
                     "attributes": {
                         "visible": false
@@ -2523,64 +2694,6 @@
                 "level-editor-hint": {
                     "attributes": {
                         "visible": false
-                    }
-                },
-                "main-menu-bg": {
-                    "children": {
-                        "new": [
-                            {
-                                "type": "CCSprite",
-                                "id": "background-player",
-                                "attributes": {
-                                    "sprite": "Danz_asset/player_bg.png",
-                                    "scale": {
-                                        "fit": {
-                                            "relative": "screen"
-                                        }
-                                    },
-                                    "position": {
-                                        "anchor": "center",
-                                        "x": 0,
-                                        "y": 0
-                                    }
-                                },
-                                "children": {
-                                    "new": [
-                                        {
-                                            "type": "CCSprite",
-                                            "id": "logo-main",
-                                            "attributes": {
-                                                "sprite": "Danz_asset/nova_logo.png",
-                                                "position": {
-                                                    "anchor": "center",
-                                                    "x": 0,
-                                                    "y": 0
-                                                },
-                                                "scale": 1
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "type": "CCSprite",
-                                "id": "background-anime",
-                                "attributes": {
-                                    "sprite": "Danz_asset/anime.png",
-                                    "position": {
-                                        "anchor": "center",
-                                        "x": 0,
-                                        "y": 0
-                                    },
-                                    "scale": 1
-                                }
-                            }
-                        ],
-                        "all": {
-                            "attributes": {
-                                "visible": false
-                            }
-                        }
                     }
                 }
             }
