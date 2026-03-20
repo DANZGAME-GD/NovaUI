@@ -3,11 +3,7 @@
         "node": {
             "background": {
                 "attributes": {
-                    "color": {
-                        "r": 255,
-                        "g": 255,
-                        "b": 255
-                    }
+                    "visible": false
                 }
             },
             "ground-layer": {
@@ -30,6 +26,27 @@
                     "visible": false
                 }
             }
-        }
+        },
+        "new": [
+            {
+                "type": "CCSprite",
+                "id": "background1",
+                "attributes": {
+                    "sprite": "GJ_gradientBG.png",
+                    "position": {
+                        "anchor": "center",
+                        "x": 0,
+                        "y": 0
+                    },
+                    "scale": {
+                        "fit": {
+                            "relative": "screen",
+                            "mode": "stretch"
+                        }
+                    },
+                    "z-order": -10
+                }
+            }
+        ]
     }
 }
