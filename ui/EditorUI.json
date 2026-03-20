@@ -1,0 +1,71 @@
+{
+    "children": {
+        "node": {
+            "editor-buttons-menu": {
+                "children": {
+                    "index": [
+                        {
+                            "type": "CCMenuItemSpriteExtra",
+                            "index": 12,
+                            "children": {
+                                "index": [
+                                    {
+                                        "type": "EditorButtonSprite",
+                                        "index": 0,
+                                        "attributes": {
+                                            "opacity": 0,
+                                            "cascade-opacity": false
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "node": {
+                        "hjfod.betteredit/preview-trigger": {
+                            "children": {
+                                "index": [
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 0,
+                                        "children": {
+                                            "index": [
+                                                {
+                                                    "type": "EditorButtonSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "opacity": 0,
+                                                        "cascade-opacity": false,
+                                                        "cascade-color": false
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 1,
+                                        "children": {
+                                            "index": [
+                                                {
+                                                    "type": "EditorButtonSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "sprite": "Danz_asset/Danz_blankUi.png",
+                                                        "opacity": 0,
+                                                        "cascade-opacity": false,
+                                                        "cascade-color": false
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
