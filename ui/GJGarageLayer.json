@@ -1,22 +1,26 @@
 {
+    "children": {
+        "node": {
+            "top-left-corner": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "bottom-left-corner": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "bottom-right-corner": {
+                "attributes": {
+                    "visible": false
+                }
+            }
+        }
+    },
     "after-transition": {
         "children": {
             "node": {
-                "top-left-corner": {
-                    "attributes": {
-                        "visible": false
-                    }
-                },
-                "bottom-left-corner": {
-                    "attributes": {
-                        "visible": false
-                    }
-                },
-                "bottom-right-corner": {
-                    "attributes": {
-                        "visible": false
-                    }
-                },
                 "navdot-menu": {
                     "attributes": {
                         "actions": [
