@@ -1,0 +1,87 @@
+{
+    "children": {
+        "all": {
+            "attributes": {
+                "visible": false
+            }
+        },
+        "new": [
+            {
+                "type": "CCSprite",
+                "id": "background-player",
+                "attributes": {
+                    "sprite": "Danz_asset/player_bg.png",
+                    "scale": {
+                        "fit": {
+                            "relative": "screen"
+                        }
+                    },
+                    "position": {
+                        "anchor": "center",
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                "children": {
+                    "new": [
+                        {
+                            "type": "CCSprite",
+                            "id": "logo-main",
+                            "attributes": {
+                                "sprite": "Danz_asset/nova_logo.png",
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "opacity": 0,
+                                "scale": 1,
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 1
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CCSprite",
+                "id": "background-anime",
+                "attributes": {
+                    "sprite": "Danz_asset/anime.png",
+                    "position": {
+                        "anchor": "center",
+                        "x": 0,
+                        "y": 0
+                    },
+                    "scale": 1
+                }
+            }
+        ]
+    },
+    "after-transition": {
+        "children": {
+            "node": {
+                "background-player": {
+                    "children": {
+                        "node": {
+                            "logo-main": {
+                                "attributes": {
+                                    "actions": [
+                                        {
+                                            "type": "FadeIn",
+                                            "duration": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
