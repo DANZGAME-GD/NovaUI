@@ -1,0 +1,224 @@
+{
+    "after-transition": {
+        "children": {
+            "query": {
+                "list-view > [TableView:0] > [CCContentLayer:0]": {
+                    "children": {
+                        "index": [
+                            {
+                                "type": "LevelCell",
+                                "index": 0,
+                                "attributes": {
+                                    "position": {
+                                        "anchor": "self",
+                                        "x": -60,
+                                        "y": 0
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "MoveBy",
+                                            "duration": 0.6,
+                                            "value": {
+                                                "x": 60
+                                            },
+                                            "easing": "ExponentialOut"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "LevelCell",
+                                "index": 1,
+                                "attributes": {
+                                    "position": {
+                                        "anchor": "self",
+                                        "x": -60,
+                                        "y": 0
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "MoveBy",
+                                            "duration": 0.64,
+                                            "value": {
+                                                "x": 60
+                                            },
+                                            "easing": "ExponentialOut"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "LevelCell",
+                                "index": 2,
+                                "attributes": {
+                                    "position": {
+                                        "anchor": "self",
+                                        "x": -60,
+                                        "y": 0
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "MoveBy",
+                                            "duration": 0.68,
+                                            "value": {
+                                                "x": 60
+                                            },
+                                            "easing": "ExponentialOut"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "LevelCell",
+                                "index": 3,
+                                "attributes": {
+                                    "position": {
+                                        "anchor": "self",
+                                        "x": -70,
+                                        "y": 0
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "MoveBy",
+                                            "duration": 0.72,
+                                            "value": {
+                                                "x": 70
+                                            },
+                                            "easing": "BackOut"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "LevelCell",
+                                "index": 4,
+                                "attributes": {
+                                    "position": {
+                                        "anchor": "self",
+                                        "x": -70,
+                                        "y": 0
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "MoveBy",
+                                            "duration": 0.76,
+                                            "value": {
+                                                "x": 70
+                                            },
+                                            "easing": "BackOut"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "LevelCell",
+                                "index": 5,
+                                "attributes": {
+                                    "position": {
+                                        "anchor": "self",
+                                        "x": -70,
+                                        "y": 0
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "MoveBy",
+                                            "duration": 0.8,
+                                            "value": {
+                                                "x": 70
+                                            },
+                                            "easing": "BackOut"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "LevelCell",
+                                "index": 6,
+                                "attributes": {
+                                    "position": {
+                                        "anchor": "self",
+                                        "x": -70,
+                                        "y": 0
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "MoveBy",
+                                            "duration": 0.84,
+                                            "value": {
+                                                "x": 70
+                                            },
+                                            "easing": "BackOut"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "LevelCell",
+                                "index": 7,
+                                "attributes": {
+                                    "position": {
+                                        "anchor": "self",
+                                        "x": -70,
+                                        "y": 0
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "MoveBy",
+                                            "duration": 0.88,
+                                            "value": {
+                                                "x": 70
+                                            },
+                                            "easing": "BackOut"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "LevelCell",
+                                "index": 8,
+                                "attributes": {
+                                    "position": {
+                                        "anchor": "self",
+                                        "x": -70,
+                                        "y": 0
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "MoveBy",
+                                            "duration": 0.92,
+                                            "value": {
+                                                "x": 70
+                                            },
+                                            "easing": "BackOut"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "LevelCell",
+                                "index": 9,
+                                "attributes": {
+                                    "position": {
+                                        "anchor": "self",
+                                        "x": -70,
+                                        "y": 0
+                                    },
+                                    "actions": [
+                                        {
+                                            "type": "MoveBy",
+                                            "duration": 0.96,
+                                            "value": {
+                                                "x": 70
+                                            },
+                                            "easing": "BackOut"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
