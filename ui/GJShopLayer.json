@@ -1,0 +1,314 @@
+{
+    "children": {
+        "index": [
+            {
+                "type": "ListButtonBar",
+                "index": 0,
+                "attributes": {
+                    "visible": true
+                },
+                "children": {
+                    "query": {
+                        "[BoomScrollLayer:0] > [ExtendedLayer:0] > [ListButtonPage:0] > [CCMenu:0]": {
+                            "attributes": {
+                                "visible": true
+                            },
+                            "children": {
+                                "index": [
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 0,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "self",
+                                                "x": 127,
+                                                "y": -175
+                                            },
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.7,
+                                                            "value": {
+                                                                "x": 0,
+                                                                "y": 150
+                                                            },
+                                                            "easing": "BackOut"
+                                                        },
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.5,
+                                                            "value": {
+                                                                "x": -127,
+                                                                "y": 25
+                                                            },
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 1,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "self",
+                                                "x": 43,
+                                                "y": -175
+                                            },
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.7,
+                                                            "value": {
+                                                                "x": 0,
+                                                                "y": 150
+                                                            },
+                                                            "easing": "BackOut"
+                                                        },
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.5,
+                                                            "value": {
+                                                                "x": -43,
+                                                                "y": 25
+                                                            },
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 2,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "self",
+                                                "x": -43,
+                                                "y": -175
+                                            },
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.7,
+                                                            "value": {
+                                                                "x": 0,
+                                                                "y": 150
+                                                            },
+                                                            "easing": "BackOut"
+                                                        },
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.5,
+                                                            "value": {
+                                                                "x": 43,
+                                                                "y": 25
+                                                            },
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 3,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "self",
+                                                "x": -127,
+                                                "y": -175
+                                            },
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.7,
+                                                            "value": {
+                                                                "x": 0,
+                                                                "y": 150
+                                                            },
+                                                            "easing": "BackOut"
+                                                        },
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.5,
+                                                            "value": {
+                                                                "x": 127,
+                                                                "y": 25
+                                                            },
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 4,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "self",
+                                                "x": 127,
+                                                "y": -100
+                                            },
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.7,
+                                                            "value": {
+                                                                "x": 0,
+                                                                "y": 150
+                                                            },
+                                                            "easing": "BackOut"
+                                                        },
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.5,
+                                                            "value": {
+                                                                "x": -127,
+                                                                "y": -50
+                                                            },
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 5,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "self",
+                                                "x": 43,
+                                                "y": -100
+                                            },
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.7,
+                                                            "value": {
+                                                                "x": 0,
+                                                                "y": 150
+                                                            },
+                                                            "easing": "BackOut"
+                                                        },
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.5,
+                                                            "value": {
+                                                                "x": -43,
+                                                                "y": -50
+                                                            },
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 6,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "self",
+                                                "x": -43,
+                                                "y": -100
+                                            },
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.7,
+                                                            "value": {
+                                                                "x": 0,
+                                                                "y": 150
+                                                            },
+                                                            "easing": "BackOut"
+                                                        },
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.5,
+                                                            "value": {
+                                                                "x": 43,
+                                                                "y": -50
+                                                            },
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 7,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "self",
+                                                "x": -127,
+                                                "y": -100
+                                            },
+                                            "actions": [
+                                                {
+                                                    "type": "Sequence",
+                                                    "actions": [
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.7,
+                                                            "value": {
+                                                                "x": 0,
+                                                                "y": 150
+                                                            },
+                                                            "easing": "BackOut"
+                                                        },
+                                                        {
+                                                            "type": "MoveBy",
+                                                            "duration": 0.5,
+                                                            "value": {
+                                                                "x": 127,
+                                                                "y": -50
+                                                            },
+                                                            "easing": "BackOut"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}
