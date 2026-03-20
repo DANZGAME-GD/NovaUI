@@ -9,6 +9,616 @@
                         "b": 255
                     }
                 }
+            },
+            "play-menu": {
+                "children": {
+                    "node": {
+                        "play-button": {
+                            "event": {
+                                "on-activate": {
+                                    "parent": {
+                                        "parent": {
+                                            "children": {
+                                                "node": {
+                                                    "background": {
+                                                        "attributes": {
+                                                            "color": "#C7C7C7"
+                                                        }
+                                                    },
+                                                    "right-side-menu": {
+                                                        "attributes": {
+                                                            "actions": [
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 0.3,
+                                                                    "value": {
+                                                                        "x": 70,
+                                                                        "y": 0
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type": "FadeOut",
+                                                                    "duration": 0.1
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "left-side-menu": {
+                                                        "attributes": {
+                                                            "actions": [
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 0.3,
+                                                                    "value": {
+                                                                        "x": -70,
+                                                                        "y": 0
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type": "FadeOut",
+                                                                    "duration": 0.1
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "other-menu": {
+                                                        "attributes": {
+                                                            "visible": false,
+                                                            "actions": [
+                                                                {
+                                                                    "type": "FadeOut",
+                                                                    "duration": 0.1
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "settings-menu": {
+                                                        "attributes": {
+                                                            "actions": [
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 0.3,
+                                                                    "value": {
+                                                                        "x": -70,
+                                                                        "y": 0
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type": "FadeOut",
+                                                                    "duration": 0.1
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "garage-menu": {
+                                                        "attributes": {
+                                                            "actions": [
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 0.3,
+                                                                    "value": {
+                                                                        "x": 0,
+                                                                        "y": 70
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type": "FadeOut",
+                                                                    "duration": 0.1
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "bottom-right-art": {
+                                                        "attributes": {
+                                                            "actions": [
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 0.3,
+                                                                    "value": {
+                                                                        "x": 70,
+                                                                        "y": -70
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type": "FadeOut",
+                                                                    "duration": 0.1
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "bottom-left-art": {
+                                                        "attributes": {
+                                                            "actions": [
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 0.3,
+                                                                    "value": {
+                                                                        "x": -70,
+                                                                        "y": -70
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type": "FadeOut",
+                                                                    "duration": 0.1
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "custom-songs-widget": {
+                                                        "children": {
+                                                            "node": {
+                                                                "bg": {
+                                                                    "attributes": {
+                                                                        "visible": false,
+                                                                        "actions": [
+                                                                            {
+                                                                                "type": "MoveBy",
+                                                                                "duration": 0.3,
+                                                                                "value": {
+                                                                                    "x": 0,
+                                                                                    "y": -70
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "type": "FadeOut",
+                                                                                "duration": 0.1
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "id-and-size-label": {
+                                                                    "attributes": {
+                                                                        "visible": false,
+                                                                        "actions": [
+                                                                            {
+                                                                                "type": "FadeOut",
+                                                                                "duration": 0.1
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "buttons-menu": {
+                                                                    "attributes": {
+                                                                        "visible": false,
+                                                                        "actions": [
+                                                                            {
+                                                                                "type": "FadeOut",
+                                                                                "duration": 0.1
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "downloads-icon": {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": -150,
+                                                                "y": -30
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "FadeIn",
+                                                                    "duration": 0.5
+                                                                },
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 1,
+                                                                    "value": {
+                                                                        "x": 0,
+                                                                        "y": 20
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "downloads-label": {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": -117,
+                                                                "y": -30
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "FadeIn",
+                                                                    "duration": 0.5
+                                                                },
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 1,
+                                                                    "value": {
+                                                                        "x": 0,
+                                                                        "y": 20
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "likes-icon": {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": -47,
+                                                                "y": -50
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "FadeIn",
+                                                                    "duration": 0.5
+                                                                },
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 1,
+                                                                    "value": {
+                                                                        "x": 0,
+                                                                        "y": 40
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "likes-label": {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": -15,
+                                                                "y": -50
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "FadeIn",
+                                                                    "duration": 0.5
+                                                                },
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 1,
+                                                                    "value": {
+                                                                        "x": 0,
+                                                                        "y": 40
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "orbs-icon": {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": 55,
+                                                                "y": -70
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "FadeIn",
+                                                                    "duration": 0.5
+                                                                },
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 1,
+                                                                    "value": {
+                                                                        "x": 0,
+                                                                        "y": 60
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "orbs-label": {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": 88,
+                                                                "y": -70
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "FadeIn",
+                                                                    "duration": 0.5
+                                                                },
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 1,
+                                                                    "value": {
+                                                                        "x": 0,
+                                                                        "y": 60
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "length-icon": {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": -43,
+                                                                "y": -40 
+                                                            }
+                                                        }
+                                                    },
+                                                    "length-label": {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": -10,
+                                                                "y": -40
+                                                            }
+                                                        }
+                                                    },
+                                                    "exact-length-label": {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": -10,
+                                                                "y": -57
+                                                            }
+                                                        }
+                                                    },
+                                                    "play-menu": {
+                                                        "children": {
+                                                            "node": {
+                                                                "play-button": {
+                                                                    "attributes": {
+                                                                        "position": {
+                                                                            "anchor": "bottom-left",
+                                                                            "x": 0,
+                                                                            "y": 51
+                                                                        },
+                                                                        "actions": [
+                                                                            {
+                                                                                "type": "MoveBy",
+                                                                                "duration": 1,
+                                                                                "value": {
+                                                                                    "x": -120,
+                                                                                    "y": 0
+                                                                                },
+                                                                                "easing": "ExponentialOut"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "difficulty-sprite": {
+                                                        "attributes": {
+                                                            "actions": [
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 0.8,
+                                                                    "value": {
+                                                                        "x": -100,
+                                                                        "y": -18
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "stars-icon": {
+                                                        "attributes": {
+                                                            "actions": [
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 0.8,
+                                                                    "value": {
+                                                                        "x": -100,
+                                                                        "y": -18
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "stars-label": {
+                                                        "attributes": {
+                                                            "actions": [
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 0.8,
+                                                                    "value": {
+                                                                        "x": -100,
+                                                                        "y": -18
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "coin-icon-1": {
+                                                        "attributes": {
+                                                            "actions": [
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 1,
+                                                                    "value": {
+                                                                        "x": -100,
+                                                                        "y": -18
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "coin-icon-2": {
+                                                        "attributes": {
+                                                            "actions": [
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 1.2,
+                                                                    "value": {
+                                                                        "x": -100,
+                                                                        "y": -18
+                                                                    },
+                                                                    "easing": "ExponentialOut",
+                                                                    "easing-rate": 0.4
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "coin-icon-3": {
+                                                        "attributes": {
+                                                            "actions": [
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 1.4,
+                                                                    "value": {
+                                                                        "x": -100,
+                                                                        "y": -18
+                                                                    },
+                                                                    "easing": "ExponentialOut",
+                                                                    "easing-rate": 0.1
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "normal-mode-label": {
+                                                        "attributes": {
+                                                            "visible": false
+                                                        }
+                                                    },
+                                                    "practice-mode-label": {
+                                                        "attributes": {
+                                                            "visible": false
+                                                        }
+                                                    },
+                                                    "normal-mode-bar": {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": 85,
+                                                                "y": 40
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "FadeIn",
+                                                                    "duration": 0.5
+                                                                },
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 1,
+                                                                    "value": {
+                                                                        "x": 0,
+                                                                        "y": 30
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "practice-mode-bar": {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": 85,
+                                                                "y": -12
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "FadeIn",
+                                                                    "duration": 0.5
+                                                                },
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 1,
+                                                                    "value": {
+                                                                        "x": 0,
+                                                                        "y": 50
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "normal-mode-percentage": {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": -55,
+                                                                "y": 40
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "FadeIn",
+                                                                    "duration": 0.5
+                                                                },
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 1,
+                                                                    "value": {
+                                                                        "x": 0,
+                                                                        "y": 30
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "practice-mode-percentage": {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": -55,
+                                                                "y": -12
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "FadeIn",
+                                                                    "duration": 0.5
+                                                                },
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 1,
+                                                                    "value": {
+                                                                        "x": 0,
+                                                                        "y": 50
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "best-time-label": {
+                                                        "attributes": {
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": 55,
+                                                                "y": 18
+                                                            },
+                                                            "actions": [
+                                                                {
+                                                                    "type": "FadeIn",
+                                                                    "duration": 0.5
+                                                                },
+                                                                {
+                                                                    "type": "MoveBy",
+                                                                    "duration": 0.8,
+                                                                    "value": {
+                                                                        "x": 0,
+                                                                        "y": 30
+                                                                    },
+                                                                    "easing": "ExponentialOut"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
