@@ -1,42 +1,18 @@
 {
-    "1.1.18": [
-        "Final review and adjustments to packaging process",
-        "Confirmed successful release of both Nova Ui and Nova Ui: Extension"
-    ],
-    "1.1.19": [
-        "Minor tweaks to workflow for future releases",
-        "Ensured all relevant files are properly documented in changelog"
-    ],
-    "1.1.20": [
-        "Added NovaUi_Extension.zip to release artifacts",
-        "Improved clarity in changelog entries"
-    ],
-    "1.1.21": [
-        "Streamlined packaging process for both main and extension packs",
-        "Enhanced documentation for users regarding the two pack options"
-    ],
-    "1.1.22": [
-        "Finalized version 1.1.22 release",
-        "Ensured all changes are accurately reflected in changelog"
-    ],
-    "1.1.23": [
-        "Updated pack.json version to 1.1.23",
-        "Maintained consistency across all release documentation"
-    ],
-    "1.1.24": [
-        "Updated pack.json version to 1.1.24",
-        "Prepared for next release cycle with all necessary documentation"
-    ],
-    "1.1.25": [
-        "Test Workflow"
-    ],
-    "1.1.26": [
-        "."
-    ],
-    "1.1.27": [
-        "."
-    ],
-    "1.1.28": [
-        "Remove Readme"
+    "1.7.0": [
+        "Added: Alert Button In Texture Layer",
+        "Added: Play Level Animation",
+        "Added: Ui Animation In Shop Layer",
+        "Added: Ui Animation In Gauntlet Layer",
+        "Added: Ui Animation In Level Browser Layer",
+        "Added: Alkatrreize As A Credit Player",
+        "Added: Logo In Main Menu",
+        "Change: Editor Asset",
+        "Update: Credits Layer",
+        "Update: Goede Button",
+        "Fixed: Robtop Logo In Loading Layer",
+        "Fixed: Background In Main Levels Layer",
+        "Fixed: Anchor Point Username",
+        "Fixed: Close Button"
     ]
 }
