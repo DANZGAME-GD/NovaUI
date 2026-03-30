@@ -9,7 +9,7 @@
         "Added: Logo In Main Menu",
         "Change: Editor Asset",
         "Update: Credits Layer",
-        "Update: Goede Button",
+        "Update: Geode Button",
         "Fixed: Robtop Logo In Loading Layer",
         "Fixed: Background In Main Levels Layer",
         "Fixed: Anchor Point Username",
@@ -26,5 +26,8 @@
     ],
     "1.7.4": [
         "Change: Speed"
-    ]
+    ],
+    "1.7.5": [
+        "Change: Speed"
+     ]
 }
