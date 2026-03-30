@@ -22,7 +22,7 @@
                             "actions": [
 								{
 									"type": "FadeIn",
-									"duration": 0.09
+									"duration": 0.7
 								},
                                 {
                                     "type": "MoveBy",
@@ -325,7 +325,7 @@
                                             "actions": [
                                                 {
                                                     "type": "MoveBy",
-                                                    "duration": 0.5,
+                                                    "duration": 0.7,
                                                     "value": {
                                                         "x": -220,
                                                         "y": 0
@@ -389,7 +389,7 @@
                                 "actions": [
                                     {
                                         "type": "FadeIn",
-                                        "duration": 0.1
+                                        "duration": 0.3
                                     },
                                     {
                                         "type": "MoveBy",
@@ -2029,7 +2029,7 @@
                                             "actions": [
 												{
 													"type": "FadeIn",
-													"duration": 0.2
+													"duration": 0.3
 												},
                                                 {
                                                     "type": "MoveBy",
@@ -2140,7 +2140,7 @@
                                             "actions": [
 												{
 													"type": "FadeIn",
-													"duration": 0.25
+													"duration": 0.35
 												},
                                                 {
                                                     "type": "MoveBy",
@@ -2251,7 +2251,7 @@
                                             "actions": [
 												{
 													"type": "FadeIn",
-													"duration": 0.3
+													"duration": 0.4
 												},
                                                 {
                                                     "type": "MoveBy",
@@ -2385,7 +2385,7 @@
                                             "actions": [
 												{
 													"type": "FadeIn",
-													"duration": 0.35
+													"duration": 0.45
 												},
                                                 {
                                                     "type": "MoveBy",
@@ -2496,7 +2496,7 @@
                                             "actions": [
 												{
 													"type": "FadeIn",
-													"duration": 0.4
+													"duration": 0.55
 												},
                                                 {
                                                     "type": "MoveBy",
