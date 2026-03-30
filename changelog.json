@@ -14,5 +14,8 @@
         "Fixed: Background In Main Levels Layer",
         "Fixed: Anchor Point Username",
         "Fixed: Close Button"
+    ],
+    "1.7.1": [
+        "Change: Speed"
     ]
 }
