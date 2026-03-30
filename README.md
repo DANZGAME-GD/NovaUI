@@ -18,3 +18,9 @@
 * [Animate This Sprite!](https://geode-sdk.org/mods/user95401.animate-this-sprite)
 
 If you have any other questions or need help, be sure to join my [Discord Server!](https://discord.gg/WJgFhSpTz5)
+
+## Credits Asset
+* Shaders > [Mellow Voronoi](https://www.shadertoy.com/view/wlXcDS)
+* Background > [Slr - Graphite Background](https://www.youtube.com/watch?v=ag13IgTauU8)
+* Background Player > [The Deli Background](https://www.youtube.com/watch?v=SU0CCJbHYYk&list=PLBP4wY8Toya-QvSwVIRpALhO_qiYqE0fh)
+* Editor Asset > [Alkatreize](https://www.youtube.com/channel/UCKGhzag0So06pzIqwAeTP-Q)
