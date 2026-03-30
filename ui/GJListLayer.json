@@ -1,222 +1,270 @@
 {
-    "after-transition": {
-        "children": {
-            "query": {
-                "list-view > [TableView:0] > [CCContentLayer:0]": {
-                    "children": {
-                        "index": [
-                            {
-                                "type": "LevelCell",
-                                "index": 0,
-                                "attributes": {
-                                    "position": {
-                                        "anchor": "self",
-                                        "x": -60,
-                                        "y": 0
+    "children": {
+        "query": {
+            "list-view > [TableView:0] > [CCContentLayer:0]": {
+                "children": {
+                    "index": [
+                        {
+                            "type": "LevelCell",
+                            "index": 0,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -60,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.3
                                     },
-                                    "actions": [
-                                        {
-                                            "type": "MoveBy",
-                                            "duration": 0.6,
-                                            "value": {
-                                                "x": 60
-                                            },
-                                            "easing": "ExponentialOut"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "type": "LevelCell",
-                                "index": 1,
-                                "attributes": {
-                                    "position": {
-                                        "anchor": "self",
-                                        "x": -60,
-                                        "y": 0
-                                    },
-                                    "actions": [
-                                        {
-                                            "type": "MoveBy",
-                                            "duration": 0.64,
-                                            "value": {
-                                                "x": 60
-                                            },
-                                            "easing": "ExponentialOut"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "type": "LevelCell",
-                                "index": 2,
-                                "attributes": {
-                                    "position": {
-                                        "anchor": "self",
-                                        "x": -60,
-                                        "y": 0
-                                    },
-                                    "actions": [
-                                        {
-                                            "type": "MoveBy",
-                                            "duration": 0.68,
-                                            "value": {
-                                                "x": 60
-                                            },
-                                            "easing": "ExponentialOut"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "type": "LevelCell",
-                                "index": 3,
-                                "attributes": {
-                                    "position": {
-                                        "anchor": "self",
-                                        "x": -70,
-                                        "y": 0
-                                    },
-                                    "actions": [
-                                        {
-                                            "type": "MoveBy",
-                                            "duration": 0.72,
-                                            "value": {
-                                                "x": 70
-                                            },
-                                            "easing": "BackOut"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "type": "LevelCell",
-                                "index": 4,
-                                "attributes": {
-                                    "position": {
-                                        "anchor": "self",
-                                        "x": -70,
-                                        "y": 0
-                                    },
-                                    "actions": [
-                                        {
-                                            "type": "MoveBy",
-                                            "duration": 0.76,
-                                            "value": {
-                                                "x": 70
-                                            },
-                                            "easing": "BackOut"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "type": "LevelCell",
-                                "index": 5,
-                                "attributes": {
-                                    "position": {
-                                        "anchor": "self",
-                                        "x": -70,
-                                        "y": 0
-                                    },
-                                    "actions": [
-                                        {
-                                            "type": "MoveBy",
-                                            "duration": 0.8,
-                                            "value": {
-                                                "x": 70
-                                            },
-                                            "easing": "BackOut"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "type": "LevelCell",
-                                "index": 6,
-                                "attributes": {
-                                    "position": {
-                                        "anchor": "self",
-                                        "x": -70,
-                                        "y": 0
-                                    },
-                                    "actions": [
-                                        {
-                                            "type": "MoveBy",
-                                            "duration": 0.84,
-                                            "value": {
-                                                "x": 70
-                                            },
-                                            "easing": "BackOut"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "type": "LevelCell",
-                                "index": 7,
-                                "attributes": {
-                                    "position": {
-                                        "anchor": "self",
-                                        "x": -70,
-                                        "y": 0
-                                    },
-                                    "actions": [
-                                        {
-                                            "type": "MoveBy",
-                                            "duration": 0.88,
-                                            "value": {
-                                                "x": 70
-                                            },
-                                            "easing": "BackOut"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "type": "LevelCell",
-                                "index": 8,
-                                "attributes": {
-                                    "position": {
-                                        "anchor": "self",
-                                        "x": -70,
-                                        "y": 0
-                                    },
-                                    "actions": [
-                                        {
-                                            "type": "MoveBy",
-                                            "duration": 0.92,
-                                            "value": {
-                                                "x": 70
-                                            },
-                                            "easing": "BackOut"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "type": "LevelCell",
-                                "index": 9,
-                                "attributes": {
-                                    "position": {
-                                        "anchor": "self",
-                                        "x": -70,
-                                        "y": 0
-                                    },
-                                    "actions": [
-                                        {
-                                            "type": "MoveBy",
-                                            "duration": 0.96,
-                                            "value": {
-                                                "x": 70
-                                            },
-                                            "easing": "BackOut"
-                                        }
-                                    ]
-                                }
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 1.5,
+                                        "value": {
+                                            "x": 60,
+                                            "y": 0
+                                        },
+                                        "easing": "ExponentialOut"
+                                    }
+                                ]
                             }
-                        ]
-                    }
+                        },
+                        {
+                            "type": "LevelCell",
+                            "index": 1,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -60,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.33
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 1.54,
+                                        "value": {
+                                            "x": 60,
+                                            "y": 0
+                                        },
+                                        "easing": "ExponentialOut"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "LevelCell",
+                            "index": 2,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -60,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.36
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 1.58,
+                                        "value": {
+                                            "x": 60,
+                                            "y": 0
+                                        },
+                                        "easing": "ExponentialOut"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "LevelCell",
+                            "index": 3,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -70,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.39
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 1.62,
+                                        "value": {
+                                            "x": 70,
+                                            "y": 0
+                                        },
+                                        "easing": "ExponentialOut"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "LevelCell",
+                            "index": 4,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -70,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.42
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 1.66,
+                                        "value": {
+                                            "x": 70,
+                                            "y": 0
+                                        },
+                                        "easing": "ExponentialOut"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "LevelCell",
+                            "index": 5,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -70,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.45
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 1.7,
+                                        "value": {
+                                            "x": 70,
+                                            "y": 0
+                                        },
+                                        "easing": "ExponentialOut"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "LevelCell",
+                            "index": 6,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -70,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.48
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 1.74,
+                                        "value": {
+                                            "x": 70,
+                                            "y": 0
+                                        },
+                                        "easing": "ExponentialOut"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "LevelCell",
+                            "index": 7,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -70,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.51
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 1.78,
+                                        "value": {
+                                            "x": 70,
+                                            "y": 0
+                                        },
+                                        "easing": "ExponentialOut"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "LevelCell",
+                            "index": 8,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -70,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.54
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 1.82,
+                                        "value": {
+                                            "x": 70,
+                                            "y": 0
+                                        },
+                                        "easing": "ExponentialOut"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "LevelCell",
+                            "index": 9,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -70,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "FadeIn",
+                                        "duration": 0.57
+                                    },
+                                    {
+                                        "type": "MoveBy",
+                                        "duration": 1.86,
+                                        "value": {
+                                            "x": 70,
+                                            "y": 0
+                                        },
+                                        "easing": "ExponentialOut"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
                 }
             }
         }
