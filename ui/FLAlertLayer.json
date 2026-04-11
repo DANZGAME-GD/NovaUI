@@ -216,6 +216,26 @@
                                                                                             }
                                                                                         }
                                                                                     },
+                                                                                    "b1rtek.gddlintegration/rating-menu": {
+                                                                                        "attributes": {
+                                                                                            "position": {
+                                                                                                "anchor": "center",
+                                                                                                "x": -174,
+                                                                                                "y": 51
+                                                                                            },
+                                                                                            "actions": [
+                                                                                                {
+                                                                                                    "type": "MoveBy",
+                                                                                                    "duration": 1,
+                                                                                                    "value": {
+                                                                                                        "x": -100,
+                                                                                                        "y": -15
+                                                                                                    },
+                                                                                                    "easing": "ExponentialOut"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
                                                                                     "difficulty-sprite": {
                                                                                         "attributes": {
                                                                                             "actions": [
@@ -490,6 +510,74 @@
                                                                                                     "easing": "ExponentialOut"
                                                                                                 }
                                                                                             ]
+                                                                                        }
+                                                                                    },
+                                                                                    "xboctatuk.globallistpositions/gdl-icon": {
+                                                                                        "attributes": {
+                                                                                            "position": {
+                                                                                                "anchor": "center",
+                                                                                                "x": -230,
+                                                                                                "y": -30
+                                                                                            },
+                                                                                            "actions": [
+                                                                                                {
+                                                                                                    "type": "FadeIn",
+                                                                                                    "duration": 0.5
+                                                                                                },
+                                                                                                {
+                                                                                                    "type": "MoveBy",
+                                                                                                    "duration": 1,
+                                                                                                    "value": {
+                                                                                                        "x": 0,
+                                                                                                        "y": 20
+                                                                                                    },
+                                                                                                    "easing": "ExponentialOut"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    "xboctatuk.globallistpositions/gdl-label": {
+                                                                                        "attributes": {
+                                                                                            "position": {
+                                                                                                "anchor": "center",
+                                                                                                "x": -217,
+                                                                                                "y": -30
+                                                                                            },
+                                                                                            "actions": [
+                                                                                                {
+                                                                                                    "type": "FadeIn",
+                                                                                                    "duration": 0.5
+                                                                                                },
+                                                                                                {
+                                                                                                    "type": "MoveBy",
+                                                                                                    "duration": 1,
+                                                                                                    "value": {
+                                                                                                        "x": 0,
+                                                                                                        "y": 20
+                                                                                                    },
+                                                                                                    "easing": "ExponentialOut"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    "alphalaneous.projectedstars/stars-particles": {
+                                                                                        "attributes": {
+                                                                                            "visible": false
+                                                                                        }
+                                                                                    },
+                                                                                    "alphalaneous.projectedstars/stars-sprite": {
+                                                                                        "attributes": {
+                                                                                            "visible": false
+                                                                                        }
+                                                                                    },
+                                                                                    "alphalaneous.projectedstars/stars-sprite-outline": {
+                                                                                        "attributes": {
+                                                                                            "visible": false
+                                                                                        }
+                                                                                    },
+                                                                                    "alphalaneous.projectedstars/stars-label": {
+                                                                                        "attributes": {
+                                                                                            "visible": false
                                                                                         }
                                                                                     }
                                                                                 }
