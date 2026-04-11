@@ -18,5 +18,8 @@
     "1.7.1": [
         "Added: Credits Assets",
         "Decrease Ui Animation Speed"
+    ],
+    "1.7.2": [
+        "Fixed: Bug In LevelInfoLayer"
     ]
 }
