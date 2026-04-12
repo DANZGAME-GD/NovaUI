@@ -725,7 +725,7 @@
                                                                             "id": "nova-text",
                                                                             "attributes": {
                                                                                 "font": "bigFont.fnt",
-                                                                                "text": "Nova UI Version\nv1.7.2",
+                                                                                "text": "Nova UI Version\nv1.7.3",
                                                                                 "scale": 0.4,
                                                                                 "position": {
                                                                                     "anchor": "top-left",

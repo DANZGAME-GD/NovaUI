@@ -238,16 +238,12 @@
                                                                                     },
                                                                                     "difficulty-sprite": {
                                                                                         "attributes": {
+                                                                                            "position": {
+                                                                                                "anchor": "center",
+                                                                                                "x": -100,
+                                                                                                "y": 71
+                                                                                            },
                                                                                             "actions": [
-                                                                                                {
-                                                                                                    "type": "MoveBy",
-                                                                                                    "duration": 0,
-                                                                                                    "value": {
-                                                                                                        "x": 100,
-                                                                                                        "y": 18
-                                                                                                    },
-                                                                                                    "easing": "ExponentialOut"
-                                                                                                },
                                                                                                 {
                                                                                                     "type": "MoveBy",
                                                                                                     "duration": 0.8,
@@ -262,16 +258,12 @@
                                                                                     },
                                                                                     "stars-icon": {
                                                                                         "attributes": {
+                                                                                            "position": {
+                                                                                                "anchor": "center",
+                                                                                                "x": -92,
+                                                                                                "y": 32
+                                                                                            },
                                                                                             "actions": [
-                                                                                                {
-                                                                                                    "type": "MoveBy",
-                                                                                                    "duration": 0,
-                                                                                                    "value": {
-                                                                                                        "x": 100,
-                                                                                                        "y": 18
-                                                                                                    },
-                                                                                                    "easing": "ExponentialOut"
-                                                                                                },
                                                                                                 {
                                                                                                     "type": "MoveBy",
                                                                                                     "duration": 0.8,
@@ -286,16 +278,12 @@
                                                                                     },
                                                                                     "stars-label": {
                                                                                         "attributes": {
+                                                                                            "position": {
+                                                                                                "anchor": "center",
+                                                                                                "x": -100,
+                                                                                                "y": 32
+                                                                                            },
                                                                                             "actions": [
-                                                                                                {
-                                                                                                    "type": "MoveBy",
-                                                                                                    "duration": 0,
-                                                                                                    "value": {
-                                                                                                        "x": 100,
-                                                                                                        "y": 18
-                                                                                                    },
-                                                                                                    "easing": "ExponentialOut"
-                                                                                                },
                                                                                                 {
                                                                                                     "type": "MoveBy",
                                                                                                     "duration": 0.8,
@@ -310,16 +298,12 @@
                                                                                     },
                                                                                     "coin-icon-1": {
                                                                                         "attributes": {
+                                                                                            "position": {
+                                                                                                "anchor": "center",
+                                                                                                "x": -110,
+                                                                                                "y": 15.5
+                                                                                            },
                                                                                             "actions": [
-                                                                                                {
-                                                                                                    "type": "MoveBy",
-                                                                                                    "duration": 0,
-                                                                                                    "value": {
-                                                                                                        "x": 100,
-                                                                                                        "y": 18
-                                                                                                    },
-                                                                                                    "easing": "ExponentialOut"
-                                                                                                },
                                                                                                 {
                                                                                                     "type": "MoveBy",
                                                                                                     "duration": 1,
@@ -334,16 +318,12 @@
                                                                                     },
                                                                                     "coin-icon-2": {
                                                                                         "attributes": {
+                                                                                            "position": {
+                                                                                                "anchor": "center",
+                                                                                                "x": -100,
+                                                                                                "y": 15.5
+                                                                                            },
                                                                                             "actions": [
-                                                                                                {
-                                                                                                    "type": "MoveBy",
-                                                                                                    "duration": 0,
-                                                                                                    "value": {
-                                                                                                        "x": 100,
-                                                                                                        "y": 18
-                                                                                                    },
-                                                                                                    "easing": "ExponentialOut"
-                                                                                                },
                                                                                                 {
                                                                                                     "type": "MoveBy",
                                                                                                     "duration": 1.2,
@@ -351,24 +331,19 @@
                                                                                                         "x": -100,
                                                                                                         "y": -18
                                                                                                     },
-                                                                                                    "easing": "ExponentialOut",
-                                                                                                    "easing-rate": 0.4
+                                                                                                    "easing": "ExponentialOut"
                                                                                                 }
                                                                                             ]
                                                                                         }
                                                                                     },
                                                                                     "coin-icon-3": {
                                                                                         "attributes": {
+                                                                                            "position": {
+                                                                                                "anchor": "center",
+                                                                                                "x": -90,
+                                                                                                "y": 15.5
+                                                                                            },
                                                                                             "actions": [
-                                                                                                {
-                                                                                                    "type": "MoveBy",
-                                                                                                    "duration": 0,
-                                                                                                    "value": {
-                                                                                                        "x": 100,
-                                                                                                        "y": 18
-                                                                                                    },
-                                                                                                    "easing": "ExponentialOut"
-                                                                                                },
                                                                                                 {
                                                                                                     "type": "MoveBy",
                                                                                                     "duration": 1.4,
@@ -376,8 +351,7 @@
                                                                                                         "x": -100,
                                                                                                         "y": -18
                                                                                                     },
-                                                                                                    "easing": "ExponentialOut",
-                                                                                                    "easing-rate": 0.1
+                                                                                                    "easing": "ExponentialOut"
                                                                                                 }
                                                                                             ]
                                                                                         }
@@ -517,7 +491,7 @@
                                                                                             "position": {
                                                                                                 "anchor": "center",
                                                                                                 "x": -230,
-                                                                                                "y": -30
+                                                                                                "y": -35
                                                                                             },
                                                                                             "actions": [
                                                                                                 {
@@ -541,7 +515,7 @@
                                                                                             "position": {
                                                                                                 "anchor": "center",
                                                                                                 "x": -217,
-                                                                                                "y": -30
+                                                                                                "y": -35
                                                                                             },
                                                                                             "actions": [
                                                                                                 {
