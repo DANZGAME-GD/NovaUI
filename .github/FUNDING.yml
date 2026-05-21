@@ -1,4 +1,1 @@
-github: DANZGAME-GD
-custom:
-  - https://tako.id/DANZGAME
-  - https://sociabuzz.com/danzgame/tribe
+custom: ["https://tako.id/DANZGAME", "https://sociabuzz.com/danzgame/tribe"]
