@@ -24,5 +24,8 @@
     ],
     "1.7.3": [
         "Fixed: Difficulty Icons In LevelInfoLayer"
+    ],
+    "1.7.4": [
+        "Fixed: Workflow Extension ID"
     ]
 }
