@@ -62,8 +62,7 @@ jobs:
             --exclude "changelog.json" \
             --exclude "README.md"
 
-          jq '.name = "Nova Ui: Extension"' temp_ext/pack.json > temp_ext/pack_temp.json \
-          jq '.id = "DANZGAME.Nova_Ui-exten"' temp_ext/pack.json > temp_ext/pack_temp.json
+          jq '.name = "Nova Ui: Extension | .id = "DANZGAME.Nova_Ui-exten"' temp_ext/pack.json > temp_ext/pack_temp.json 
           mv temp_ext/pack_temp.json temp_ext/pack.json
 
           cd temp_ext
