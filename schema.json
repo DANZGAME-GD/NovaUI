@@ -1,0 +1,438 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HappyTextures UI Schema",
+  "type": "object",
+  "properties": {
+    "type": { 
+      "type": "string", 
+      "enum": [
+        "CCLayer",
+        "CCLayerColor",
+        "CCScale9Sprite",
+        "CCSprite",
+        "CCNode",
+        "CCMenu",
+        "CCMenuItemSpriteExtra", 
+        "CCLabelBMFont",
+        "Alert",
+        "Popup"
+      ] 
+    },
+    "id": { "type": "string" },
+    "children": {
+      "type": "object",
+      "properties": {
+        "node": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "attributes": { "$ref": "#/properties/attributes"},
+              "children": { "$ref": "#/properties/children"},
+              "event": { "$ref": "#/properties/event"}
+            }
+          }
+        },
+        "all": {
+          "type": "object",
+          "properties": {
+            "attributes": { "$ref": "#/properties/attributes"},
+            "event": { "$ref": "#/properties/event"},
+            "parent": { "$ref": "#/properties/parent"}
+          } 
+        },
+        "new": { 
+          "type": "array", 
+          "items": { 
+            "type": "object",
+            "properties": {
+              "type": { "$ref": "#/properties/type"},
+              "id": { "$ref": "#/properties/id" },
+              "attributes": { "$ref": "#/properties/attributes" },
+              "children": { "$ref": "#/properties/children" },
+              "event": { "$ref": "#/properties/event"},
+              "parent": { "$ref": "#/properties/parent"}
+            }
+          }
+        },
+        "query": { 
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "attributes": { "$ref": "#/properties/attributes"},
+              "children": { "$ref": "#/properties/children"},
+              "event": { "$ref": "#/properties/event"},
+              "parent": { "$ref": "#/properties/parent"}
+            }
+          }
+        },
+        "move": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "node": {"type": "string"},
+              "parent": {"type": "string"},
+              "attributes": {"$ref": "#/properties/attributes"},
+              "children": {"$ref": "#/properties/children"},
+              "event": {"$ref": "#/properties/event"}
+            }
+          } 
+        },
+        "index": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {"type": "string"},
+              "index": {"type": "number"},
+              "attributes": {"$ref": "#/properties/attributes"},
+              "children": {"$ref": "#/properties/children"},
+              "event": {"$ref": "#/properties/event"},
+              "parent": { "$ref": "#/properties/parent"},
+              "comment": { "$ref": "#/properties/comment"}
+            }
+          } 
+        }
+      },
+      "additionalProperties": true
+    },
+    "attributes": {
+      "type": "object",
+      "properties": {
+        "scale": { 
+          "type": ["number", "object"],
+          "properties": {
+            "fit": { 
+              "type": "object",
+              "properties": {
+                "relative": {
+                  "type": "string",
+                  "enum": [
+                    "screen",
+                    "screen-width",
+                    "screen-height",
+                    "parent",
+                    "parent-width",
+                    "parent-height",
+                    "size"
+                  ]
+                },
+                "mode": {"type": "string"},
+                "multiplier": { "type": "number" },
+                "size": {
+                  "type": "object",
+                  "properties": {
+                    "width": {"type": "number"},
+                    "height": {"type": "number"}
+                  }
+                }
+              }
+            },
+            "x": { "type": "number" },
+            "y": { "type": "number" }
+          }
+        },
+        "base-scale": { "type": "number" },
+        "rotation": { 
+          "type": ["number", "object"],
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" }
+          }
+        },
+        "skew": { 
+          "type": "object",
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" }
+          }
+        },
+        "anchor-point": { 
+          "type": "object",
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" }
+          }
+        },
+        "content-size": { 
+          "type": "object",
+          "properties": {
+            "width": { "type": "number" },
+            "height": { "type": "number" }
+          }
+        },
+        "color": { 
+          "type": ["string", "object"],
+          "properties": {
+            "r": { "type": "number" },
+            "g": { "type": "number" },
+            "b": { "type": "number" },
+            "a": { "type": "number" }
+          }
+        },
+        "cascade-color": { "type": "boolean" },
+        "cascade-opacity": { "type": "boolean"},
+        "position": {
+          "type": "object",
+          "properties": {
+            "anchor": {
+              "type": "string", 
+              "enum": [
+                "center",
+                "center-right",
+                "center-left",
+                "bottom-center",
+                "bottom-right", 
+                "bottom-left", 
+                "top-center",
+                "top-right",
+                "top-left", 
+                "self"
+              ] 
+            },
+            "x": {"type": "number"},
+            "y": {"type": "number"}
+          }
+        },
+        "visible": { "type": "boolean" },
+        "remove": { "type": "boolean" },
+        "sprite": { 
+          "type": ["string", "object"],
+          "properties": {
+            "random": {
+              "type": "object",
+              "properties": {
+                "id": { "$ref": "#/properties/id"},
+                "mode": {
+                  "type": "string",
+                  "enum": ["load", "session"]
+                },
+                "sprite": { "type": "array"},
+                "path": {"type": "string"}
+              }
+            }
+          }
+        },
+        "sprite-frame": { "type": "string" },
+        "scale-multiplier": {"type": "number"},
+        "z-order": { "type": "number"},
+        "font": { "type": "string"},
+        "text": { "type": "string"},
+        "blending": {
+          "type": "object",
+          "properties": {
+            "source": { "type": "string" },
+            "destination": { "type": "string" }
+          }
+        },
+        "sound": { "type": "string" },
+        "link": {
+          "type": ["string", "object"],
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "id": { "type": "number" }
+          }
+        },
+        "opacity": { "type": "number" },
+        "layout": {
+          "type": "object",
+          "properties": {
+            "axis": {
+              "type": "string", 
+              "enum": ["row", "column"] 
+            },
+            "flip-axis": { "type": "boolean" },
+            "flip-cross-axis": { "type": "boolean" },
+            "auto-scale": { "type": "boolean" },
+            "grow-cross-axis": { "type": "boolean" },
+            "allow-cross-axis-overflow": {"type": "boolean"},
+            "gap": { "type": "number" },                      
+            "axis-alignment": { "type": "string", "enum": ["start", "end", "center", "even", "between"] },
+            "cross=axis-alignment": { "type": "string", "enum": ["start", "end", "center", "even", "between"] },
+            "cross=axis-line-alignment": { "type": "string", "enum": ["start", "end", "center", "even", "between"] },
+            "ignore-invisible": { "type": "boolean" }
+          }
+        },
+        "update-layout": { "type": "string", "enum": ["self", "parent"]},
+        "disable-pages": {"type": "boolean"},
+        "ignore-anchor-pos": { "type": "boolean"},
+        "actions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "Stop",
+                  "Sequence",
+                  "MoveBy",
+                  "MoveTo",
+                  "SkewBy",
+                  "SkewTo",
+                  "FadeIn",
+                  "FadeOut",
+                  "FadeTo",
+                  "ScaleBy",
+                  "ScaleTo",
+                  "RotateBy", 
+                  "RotateTo"
+                ]
+              },
+              "duration": { "type": "number" },
+              "value": {
+                "type": ["number", "object"],
+                "properties": {
+                  "x": {"type": "number"},
+                  "y": {"type": "number"}
+                }
+              },
+              "easing-rate": {"type": "number"},
+              "easing": {
+                "type": "string",
+                "enum": [
+                  "EaseInOut",
+                  "EaseIn",
+                  "EaseOut",
+                  "ElasticInOut",
+                  "ElasticIn",
+                  "ElasticOut",
+                  "BounceInOut",
+                  "BounceIn",
+                  "BounceOut",
+                  "ExponentialInOut",
+                  "ExponentialIn",
+                  "ExponentialOut",
+                  "SineInOut",
+                  "SineIn",
+                  "SineOut",
+                  "BackInOut",
+                  "BackIn",
+                  "BackOut"
+                ] 
+              },
+              "repeat": { "type": ["boolean", "number"] },
+              "actions": { "type": "array", "$ref": "#/properties/attributes/properties/actions" }
+            }
+          }
+        },
+        "callbacks": {
+          "type": "string",
+          "properties": {
+            "class": { 
+              "type": "string",
+              "enum": ["MenuLayer", "CreatorLayer"]
+            },
+            "method": { 
+              "type": "string",
+              "enum": [
+                "onPlay", 
+                "onAchievements",
+                "onCreator",
+                "onDaily",
+                "onGarage",
+                "onMoreGames",
+                "onMyProfile",
+                "onOptions",
+                "onStats",
+                "onQuit",
+                "onAdventureMap",
+                "onChallenge",
+                "onDailyLevel",
+                "onEventLevel",
+                "onFeaturedLevels",
+                "onGauntlets",
+                "onLeaderboards",
+                "onMapPacks",
+                "onMyLevels",
+                "onOnlineLevels",
+                "onPaths",
+                "onSavedLevels",
+                "onSecretVault",
+                "onTopLists",
+                "onTreasureRoom",
+                "onWeeklyLevel",
+                "onShards",
+                "onShop"
+              ]
+            }
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "after-transition": {
+      "type": "object",
+      "properties": {
+        "children": { "$ref": "#/properties/children" }
+      }
+    },
+    "event": { 
+      "type": "object",
+      "properties": {
+        "on-click": {
+          "type": "object",
+          "properties": {
+            "attributes": {"$ref": "#/properties/attributes"},
+            "children": {"$ref": "#/properties/children"},
+            "event": {"$ref": "#/properties/event"},
+            "parent": { "$ref": "#/properties/parent"}
+          }
+        },
+        "on-release": {
+          "type": "object",
+          "properties": {
+            "attributes": {"$ref": "#/properties/attributes"},
+            "children": {"$ref": "#/properties/children"},
+            "event": {"$ref": "#/properties/event"},
+            "parent": { "$ref": "#/properties/parent"}
+          }
+        },
+        "on-activate": {
+          "type": "object",
+          "properties": {
+            "attributes": {"$ref": "#/properties/attributes"},
+            "children": {"$ref": "#/properties/children"},
+            "event": {"$ref": "#/properties/event"},
+            "parent": { "$ref": "#/properties/parent"}
+          }
+        },
+        "on-hover": {
+          "type": "object",
+          "properties": {
+            "attributes": {"$ref": "#/properties/attributes"},
+            "children": {"$ref": "#/properties/children"},
+            "event": {"$ref": "#/properties/event"},
+            "parent": { "$ref": "#/properties/parent"}
+          }
+        },
+        "on-exit": {
+          "type": "object",
+          "properties": {
+            "attributes": {"$ref": "#/properties/attributes"},
+            "children": {"$ref": "#/properties/children"},
+            "event": {"$ref": "#/properties/event"},
+            "parent": { "$ref": "#/properties/parent"}
+          }
+        }
+      },
+      "additionalProperties": true 
+    },
+    "parent": {
+      "type": "object",
+      "properties": {
+        "parent": { "$ref": "#/properties/parent"},
+        "attributes": { "$ref": "#/properties/attributes"},
+        "children": { "$ref": "#/properties/children"}
+      }
+    },
+    "comment": {
+      "type": "string",
+      "description": "This is just comment code to make your easier find the index node"
+    }
+  }
+}
