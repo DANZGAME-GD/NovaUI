@@ -13,7 +13,7 @@
                     "sprite": "Danz_asset/player_bg.png",
                     "scale": {
                         "fit": {
-                            "relative": "screen"
+                            "relative": "screen-height"
                         }
                     },
                     "position": {
@@ -34,14 +34,7 @@
                                     "x": 0,
                                     "y": 0
                                 },
-                                "opacity": 0,
-                                "scale": 1,
-                                "actions": [
-                                    {
-                                        "type": "FadeIn",
-                                        "duration": 2
-                                    }
-                                ]
+                                "scale": 1
                             }
                         }
                     ]
@@ -61,27 +54,5 @@
                 }
             }
         ]
-    },
-    "after-transition": {
-        "children": {
-            "node": {
-                "background-player": {
-                    "children": {
-                        "node": {
-                            "logo-main": {
-                                "attributes": {
-                                    "actions": [
-                                        {
-                                            "type": "FadeIn",
-                                            "duration": 2
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
 }
