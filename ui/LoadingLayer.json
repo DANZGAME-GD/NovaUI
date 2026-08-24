@@ -5,13 +5,13 @@
                 "type": "CCSprite",
                 "id": "logo_main",
                 "attributes": {
-                    "sprite": "Danz_asset/nova_logo.png",
+                    "sprite": "Danz_asset/nova_title.png",
                     "position": {
                         "anchor": "center",
                         "x": 0,
                         "y": 10
                     },
-                    "scale": 1.8
+                    "scale": 1.2
                 }
             }
         ],
@@ -76,10 +76,10 @@
                     "sprite": "Danz_asset/robtop_small_logo.png",
                     "position": {
                         "anchor": "top-left",
-                        "x": 5,
+                        "x": 9,
                         "y": -21
                     },
-                    "scale": 0.75,
+                    "scale": 0.85,
                     "anchor-point": {
                         "x": 0,
                         "y": 0.5
