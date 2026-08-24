@@ -1,0 +1,11 @@
+{
+    "children": {
+        "node": {
+            "background": {
+                "attributes": {
+                    "color": "#00FFFF63"
+                }
+            }
+        }
+    }
+}
