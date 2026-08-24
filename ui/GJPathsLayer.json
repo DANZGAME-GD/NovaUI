@@ -13,7 +13,7 @@
                                 "position": {
                                     "anchor": "top-right",
                                     "x": -90,
-                                    "y": -25
+                                    "y": -30
                                 },
                                 "ignore-anchor-pos": false,
                                 "z-order": 1,
@@ -74,10 +74,812 @@
                                 "position": {
                                     "anchor": "top-right",
                                     "x": -25,
-                                    "y": -25
+                                    "y": -30
                                 },
                                 "scale": 0.9,
                                 "z-order": 1
+                            }
+                        }
+                    ],
+                    "index": [
+                        {
+                            "type": "CCSprite",
+                            "index": 0,
+                            "attributes": {
+                                "visible": false
+                            }
+                        },
+                        {
+                            "type": "CCSprite",
+                            "index": 1,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "top-center",
+                                    "x": -80,
+                                    "y": -30
+                                }
+                            }
+                        },
+                        {
+                            "type": "CCSprite",
+                            "index": 2,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "top-center",
+                                    "x": 0,
+                                    "y": -25
+                                },
+                                "scale": 1
+                            }
+                        },
+                        {
+                            "type": "CCSprite",
+                            "index": 3,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "top-center",
+                                    "x": 80,
+                                    "y": -30
+                                }
+                            }
+                        },
+                        {
+                            "type": "CCMenu",
+                            "index": 0,
+                            "attributes": {
+                                "ignore-anchor-pos": false,
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": {
+                                "index": [
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "comment": "Exit Button",
+                                        "index": 0,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "top-left",
+                                                "x": 24.3,
+                                                "y": -23.3
+                                            },
+                                            "sprite-frame": "GJ_arrow_03_001.png"
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 1,
+                                        "comment": "Path Of Fire",
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "center",
+                                                "x": -120,
+                                                "y": 83
+                                            },
+                                            "scale": 0.65,
+                                            "base-scale": 0.65,
+                                            "content-size": {
+                                                "width": 280.925,
+                                                "height": 76.3
+                                            }
+                                        },
+                                        "children": {
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "background",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathInnerBG_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 0,
+                                                            "y": 0
+                                                        },
+                                                        "z-order": -10,
+                                                        "scale": {
+                                                            "x": 0.85,
+                                                            "y": 0.7
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        },
+                                                        "color": "#ff824aff"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "Path_Label",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathLabel_01_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 70,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "index": [
+                                                {
+                                                    "type": "GJPathSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 35,
+                                                            "y": -4
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 2,
+                                        "comment": "Path Of Fire",
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "center",
+                                                "x": -120,
+                                                "y": 31
+                                            },
+                                            "scale": 0.65,
+                                            "base-scale": 0.65,
+                                            "content-size": {
+                                                "width": 280.925,
+                                                "height": 76.3
+                                            }
+                                        },
+                                        "children": {
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "background",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathInnerBG_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 0,
+                                                            "y": 0
+                                                        },
+                                                        "z-order": -10,
+                                                        "scale": {
+                                                            "x": 0.85,
+                                                            "y": 0.7
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        },
+                                                        "color": "#3b85cfff"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "Path_Label",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathLabel_02_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 70,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "index": [
+                                                {
+                                                    "type": "GJPathSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 35,
+                                                            "y": 0
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 3,
+                                        "comment": "Path Of Fire",
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "center",
+                                                "x": -120,
+                                                "y": -21
+                                            },
+                                            "scale": 0.65,
+                                            "base-scale": 0.65,
+                                            "content-size": {
+                                                "width": 280.925,
+                                                "height": 76.3
+                                            }
+                                        },
+                                        "children": {
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "background",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathInnerBG_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 0,
+                                                            "y": 0
+                                                        },
+                                                        "z-order": -10,
+                                                        "scale": {
+                                                            "x": 0.85,
+                                                            "y": 0.7
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        },
+                                                        "color": "#49a038ff"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "Path_Label",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathLabel_03_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 70,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "index": [
+                                                {
+                                                    "type": "GJPathSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 35,
+                                                            "y": 4
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 4,
+                                        "comment": "Path Of Fire",
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "center",
+                                                "x": -120,
+                                                "y": -73
+                                            },
+                                            "scale": 0.65,
+                                            "base-scale": 0.65,
+                                            "content-size": {
+                                                "width": 280.925,
+                                                "height": 76.3
+                                            }
+                                        },
+                                        "children": {
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "background",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathInnerBG_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 0,
+                                                            "y": 0
+                                                        },
+                                                        "z-order": -10,
+                                                        "scale": {
+                                                            "x": 0.85,
+                                                            "y": 0.7
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        },
+                                                        "color": "#8f4fc2ff"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "Path_Label",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathLabel_04_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 70,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "index": [
+                                                {
+                                                    "type": "GJPathSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 35,
+                                                            "y": 0
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 5,
+                                        "comment": "Path Of Fire",
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "center",
+                                                "x": -120,
+                                                "y": -125
+                                            },
+                                            "scale": 0.65,
+                                            "base-scale": 0.65,
+                                            "content-size": {
+                                                "width": 280.925,
+                                                "height": 76.3
+                                            }
+                                        },
+                                        "children": {
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "background",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathInnerBG_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 0,
+                                                            "y": 0
+                                                        },
+                                                        "z-order": -10,
+                                                        "scale": {
+                                                            "x": 0.85,
+                                                            "y": 0.7
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        },
+                                                        "color": "#c44a3dff"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "Path_Label",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathLabel_05_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 70,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "index": [
+                                                {
+                                                    "type": "GJPathSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 35,
+                                                            "y": 2
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 6,
+                                        "comment": "Path Of Fire",
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "center",
+                                                "x": 120,
+                                                "y": 83
+                                            },
+                                            "scale": 0.65,
+                                            "base-scale": 0.65,
+                                            "content-size": {
+                                                "width": 280.925,
+                                                "height": 76.3
+                                            }
+                                        },
+                                        "children": {
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "background",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathInnerBG_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 0,
+                                                            "y": 0
+                                                        },
+                                                        "z-order": -10,
+                                                        "scale": {
+                                                            "x": 0.85,
+                                                            "y": 0.7
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        },
+                                                        "color": "#a55433ff"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "Path_Label",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathLabel_06_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 70,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "index": [
+                                                {
+                                                    "type": "GJPathSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 35,
+                                                            "y": 0
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 7,
+                                        "comment": "Path Of Fire",
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "center",
+                                                "x": 120,
+                                                "y": 31
+                                            },
+                                            "scale": 0.65,
+                                            "base-scale": 0.65,
+                                            "content-size": {
+                                                "width": 280.925,
+                                                "height": 76.3
+                                            }
+                                        },
+                                        "children": {
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "background",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathInnerBG_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 0,
+                                                            "y": 0
+                                                        },
+                                                        "z-order": -10,
+                                                        "scale": {
+                                                            "x": 0.85,
+                                                            "y": 0.7
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        },
+                                                        "color": "#e62222ff"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "Path_Label",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathLabel_07_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 70,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "index": [
+                                                {
+                                                    "type": "GJPathSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 35,
+                                                            "y": 4
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 8,
+                                        "comment": "Path Of Fire",
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "center",
+                                                "x": 120,
+                                                "y": -21
+                                            },
+                                            "scale": 0.65,
+                                            "base-scale": 0.65,
+                                            "content-size": {
+                                                "width": 280.925,
+                                                "height": 76.3
+                                            }
+                                        },
+                                        "children": {
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "background",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathInnerBG_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 0,
+                                                            "y": 0
+                                                        },
+                                                        "z-order": -10,
+                                                        "scale": {
+                                                            "x": 0.85,
+                                                            "y": 0.7
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        },
+                                                        "color": "#ccccccff"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "Path_Label",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathLabel_08_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 70,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "index": [
+                                                {
+                                                    "type": "GJPathSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 35,
+                                                            "y": 0
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 9,
+                                        "comment": "Path Of Fire",
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "center",
+                                                "x": 120,
+                                                "y": -73
+                                            },
+                                            "scale": 0.65,
+                                            "base-scale": 0.65,
+                                            "content-size": {
+                                                "width": 280.925,
+                                                "height": 76.3
+                                            }
+                                        },
+                                        "children": {
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "background",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathInnerBG_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 0,
+                                                            "y": 0
+                                                        },
+                                                        "z-order": -10,
+                                                        "scale": {
+                                                            "x": 0.85,
+                                                            "y": 0.7
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        },
+                                                        "color": "#ffb24fff"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "Path_Label",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathLabel_09_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 70,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "index": [
+                                                {
+                                                    "type": "GJPathSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 35,
+                                                            "y": 0
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "index": 10,
+                                        "comment": "Path Of Fire",
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "center",
+                                                "x": 120,
+                                                "y": -125
+                                            },
+                                            "scale": 0.65,
+                                            "base-scale": 0.65,
+                                            "content-size": {
+                                                "width": 280.925,
+                                                "height": 76.3
+                                            }
+                                        },
+                                        "children": {
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "background",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathInnerBG_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 0,
+                                                            "y": 0
+                                                        },
+                                                        "z-order": -10,
+                                                        "scale": {
+                                                            "x": 0.85,
+                                                            "y": 0.7
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        },
+                                                        "color": "#c24599ff"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "Path_Label",
+                                                    "attributes": {
+                                                        "sprite-frame": "pathLabel_10_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 70,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "index": [
+                                                {
+                                                    "type": "GJPathSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 35,
+                                                            "y": 0
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
                             }
                         }
                     ]
