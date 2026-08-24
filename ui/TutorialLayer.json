@@ -1,0 +1,38 @@
+{
+    "children": {
+        "node": {
+            "main-layer": {
+                "children": {
+                    "node": {
+                        "background": {
+                            "attributes": {
+                                "visible": false
+                            }
+                        },
+                        "tutorial-title-label": {
+                            "attributes": {
+                                "font": "Danz_asset/font/united_colony.fnt"
+                            }
+                        },
+                        "tutorial-layer": {
+                            "children": {
+                                "query": {
+                                    "tutorial-text-01 > [MultilineBitmapFont:0] > [CCLabelBMFont:0]": {
+                                        "attributes": {
+                                            "font": "Danz_asset/font/united_colony.fnt"
+                                        }
+                                    },
+                                    "tutorial-text-01 > [MultilineBitmapFont:0] > [CCLabelBMFont:1]": {
+                                        "attributes": {
+                                            "font": "Danz_asset/font/united_colony.fnt"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

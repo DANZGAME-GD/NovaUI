@@ -1,0 +1,41 @@
+{
+    "children": {
+        "index": [
+            {
+                "type": "CCLayer",
+                "index": 0,
+                "children": {
+                    "index": [
+                        {
+                            "type": "CCScale9Sprite",
+                            "index": 0,
+                            "attributes": {
+                                "sprite": "geode.loader/GE_square03.png",
+                                "visible": false
+                            }
+                        }
+                    ],
+                    "new": [
+                        {
+                            "type": "CCScale9Sprite",
+                            "id": "advanced-options-bg",
+                            "attributes": {
+                                "sprite": "geode.loader/GE_square03.png",
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "content-size": {
+                                    "width": 360,
+                                    "height": 260
+                                },
+                                "z-order": -10
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

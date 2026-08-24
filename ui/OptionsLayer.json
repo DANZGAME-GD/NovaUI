@@ -1,0 +1,1167 @@
+{
+    "children": {
+        "node": {
+            "main-layer": {
+                "attributes": {
+                    "actions": [
+                        {
+                            "type": "Sequence",
+                            "actions": [
+                                {
+                                    "type": "Stop"
+                                },
+                                {
+                                    "type": "MoveTo",
+                                    "value": {
+                                        "x": 0,
+                                        "y": 0
+                                    },
+                                    "duration": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "children": {
+                    "node": {
+                        "chain-left": {
+                            "attributes": {
+                                "visible": false
+                            }
+                        },
+                        "chain-right": {
+                            "attributes": {
+                                "visible": false
+                            }
+                        },
+                        "background": {
+                            "attributes": {
+                                "visible": false
+                            }
+                        },
+                        "hide-dropdown-menu": {
+                            "children": {
+                                "node": {
+                                    "exit-button": {
+                                        "event": {
+                                            "on-activate": {
+                                                "parent": {
+                                                    "parent": {
+                                                        "parent": {
+                                                            "attributes": {
+                                                                "visible": false
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "options-menu": {
+                            "attributes": {
+                                "anchor-point": {
+                                    "x": 0,
+                                    "y": 0.5
+                                },
+                                "position": {
+                                    "anchor": "center-left",
+                                    "x": -110,
+                                    "y": -70
+                                },
+                                "actions": [
+                                    {
+                                        "type": "MoveBy",
+                                        "value": {
+                                            "x": 110,
+                                            "y": 0
+                                        },
+                                        "duration": 0.8,
+                                        "easing": "ExponentialOut"
+                                    }
+                                ]
+                            },
+                            "children": {
+                                "node": {
+                                    "account-button": {
+                                        "attributes": {
+                                            "scale": 0.8,
+                                            "base-scale": 0.8,
+                                            "content-size": {
+                                                "width": 152,
+                                                "height": 30
+                                            }
+                                        },
+                                        "children": {
+                                            "index": [
+                                                {
+                                                    "type": "ButtonSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "remove": true
+                                                    }
+                                                }
+                                            ],
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "icon",
+                                                    "attributes": {
+                                                        "sprite": "Danz_asset/player.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 15,
+                                                            "y": 0
+                                                        },
+                                                        "scale": 0.65
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCLabelBMFont",
+                                                    "id": "account",
+                                                    "attributes": {
+                                                        "font": "Danz_asset/font/united_colony.fnt",
+                                                        "text": "Account",
+                                                        "scale": 0.6,
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 33,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "how-to-play-button": {
+                                        "attributes": {
+                                            "scale": 0.8,
+                                            "base-scale": 0.8,
+                                            "content-size": {
+                                                "width": 152,
+                                                "height": 30
+                                            }
+                                        },
+                                        "children": {
+                                            "index": [
+                                                {
+                                                    "type": "ButtonSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "remove": true
+                                                    }
+                                                }
+                                            ],
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "icon",
+                                                    "attributes": {
+                                                        "sprite": "Danz_asset/tanya.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 15,
+                                                            "y": 0
+                                                        },
+                                                        "scale": 0.425
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCLabelBMFont",
+                                                    "id": "how-to-play",
+                                                    "attributes": {
+                                                        "font": "Danz_asset/font/united_colony.fnt",
+                                                        "text": "How To Play",
+                                                        "scale": 0.5,
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 33,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "event": {
+                                            "on-activate": {
+                                                "parent": {
+                                                    "parent": {
+                                                        "children": {
+                                                            "node": {
+                                                                "music-label": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "music-slider": {
+                                                                    "attributes": {         
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "sfx-label": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "sfx-slider": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "menu-music-label": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "vault-menu": {
+                                                                    "children": {
+                                                                        "node": {
+                                                                            "menu-music-toggle": {
+                                                                                "attributes": {
+                                                                                    "visible": false
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "options-button": {
+                                        "attributes": {
+                                            "scale": 0.8,
+                                            "base-scale": 0.8,
+                                            "content-size": {
+                                                "width": 152,
+                                                "height": 30
+                                            }
+                                        },
+                                        "children": {
+                                            "index": [
+                                                {
+                                                    "type": "ButtonSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "remove": true
+                                                    }
+                                                }
+                                            ],
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "icon",
+                                                    "attributes": {
+                                                        "sprite": "Danz_asset/settings_icon.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 15,
+                                                            "y": 0
+                                                        },
+                                                        "scale": 0.425
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCLabelBMFont",
+                                                    "id": "options",
+                                                    "attributes": {
+                                                        "font": "Danz_asset/font/united_colony.fnt",
+                                                        "text": "Options",
+                                                        "scale": 0.6,
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 33,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "event": {
+                                            "on-activate": {
+                                                "parent": {
+                                                    "parent": {
+                                                        "children": {
+                                                            "node": {
+                                                                "music-label": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "music-slider": {
+                                                                    "attributes": {         
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "sfx-label": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "sfx-slider": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "menu-music-label": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "vault-menu": {
+                                                                    "children": {
+                                                                        "node": {
+                                                                            "menu-music-toggle": {
+                                                                                "attributes": {
+                                                                                    "visible": false
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "graphics-button": {
+                                        "attributes": {
+                                            "scale": 0.8,
+                                            "base-scale": 0.8,
+                                            "content-size": {
+                                                "width": 152,
+                                                "height": 30
+                                            }
+                                        },
+                                        "children": {
+                                            "index": [
+                                                {
+                                                    "type": "ButtonSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "remove": true
+                                                    }
+                                                }
+                                            ],
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "icon",
+                                                    "attributes": {
+                                                        "sprite": "Danz_asset/graphic_cube.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 15,
+                                                            "y": 0
+                                                        },
+                                                        "scale": 0.425
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCLabelBMFont",
+                                                    "id": "graphic",
+                                                    "attributes": {
+                                                        "font": "Danz_asset/font/united_colony.fnt",
+                                                        "text": "Graphics",
+                                                        "scale": 0.6,
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 33,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "event": {
+                                            "on-activate": {
+                                                "parent": {
+                                                    "parent": {
+                                                        "children": {
+                                                            "node": {
+                                                                "music-label": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "music-slider": {
+                                                                    "attributes": {         
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "sfx-label": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "sfx-slider": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "menu-music-label": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "vault-menu": {
+                                                                    "children": {
+                                                                        "node": {
+                                                                            "menu-music-toggle": {
+                                                                                "attributes": {
+                                                                                    "visible": false
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "rate-button": {
+                                        "attributes": {
+                                            "scale": 0.8,
+                                            "base-scale": 0.8,
+                                            "content-size": {
+                                                "width": 152,
+                                                "height": 30
+                                            },
+                                            "position": {
+                                                "anchor": "center-left",
+                                                "x": 75,
+                                                "y": 35
+                                            }
+                                        },
+                                        "children": {
+                                            "index": [
+                                                {
+                                                    "type": "ButtonSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "remove": true
+                                                    }
+                                                }
+                                            ],
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "icon",
+                                                    "attributes": {
+                                                        "sprite": "Danz_asset/feature_icon.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 15,
+                                                            "y": 0
+                                                        },
+                                                        "scale": 0.5
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCLabelBMFont",
+                                                    "id": "rate",
+                                                    "attributes": {
+                                                        "font": "Danz_asset/font/united_colony.fnt",
+                                                        "text": "Rate",
+                                                        "scale": 0.6,
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 33,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "songs-button": {
+                                        "attributes": {
+                                            "scale": 0.8,
+                                            "base-scale": 0.8,
+                                            "content-size": {
+                                                "width": 152,
+                                                "height": 30
+                                            },
+                                            "position": {
+                                                "anchor": "center-left",
+                                                "x": 75,
+                                                "y": 0
+                                            }
+                                        },
+                                        "children": {
+                                            "index": [
+                                                {
+                                                    "type": "ButtonSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "remove": true
+                                                    }
+                                                }
+                                            ],
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "icon",
+                                                    "attributes": {
+                                                        "sprite": "GJ_noteIcon_001.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 15,
+                                                            "y": 0
+                                                        },
+                                                        "scale": 0.85
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCLabelBMFont",
+                                                    "id": "songs",
+                                                    "attributes": {
+                                                        "font": "Danz_asset/font/united_colony.fnt",
+                                                        "text": "Songs",
+                                                        "scale": 0.6,
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 33,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "help-button": {
+                                        "attributes": {
+                                            "scale": 0.8,
+                                            "base-scale": 0.8,
+                                            "content-size": {
+                                                "width": 152,
+                                                "height": 30
+                                            },
+                                            "position": {
+                                                "anchor": "center-left",
+                                                "x": 75,
+                                                "y": -35
+                                            }
+                                        },
+                                        "children": {
+                                            "index": [
+                                                {
+                                                    "type": "ButtonSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "remove": true
+                                                    }
+                                                }
+                                            ],
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "icon",
+                                                    "attributes": {
+                                                        "sprite": "Danz_asset/tanya.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 15,
+                                                            "y": 0
+                                                        },
+                                                        "scale": 0.425
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCLabelBMFont",
+                                                    "id": "help",
+                                                    "attributes": {
+                                                        "font": "Danz_asset/font/united_colony.fnt",
+                                                        "text": "Help",
+                                                        "scale": 0.6,
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 33,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "geode.texture-loader/texture-loader-button": {
+                                        "attributes": {
+                                            "scale": 0.8,
+                                            "base-scale": 0.8,
+                                            "content-size": {
+                                                "width": 152,
+                                                "height": 30
+                                            },
+                                            "position": {
+                                                "anchor": "center-left",
+                                                "x": 75,
+                                                "y": 70
+                                            }
+                                        },
+                                        "children": {
+                                            "index": [
+                                                {
+                                                    "type": "ButtonSprite",
+                                                    "index": 0,
+                                                    "attributes": {
+                                                        "remove": true
+                                                    }
+                                                }
+                                            ],
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "icon",
+                                                    "attributes": {
+                                                        "sprite": "Danz_asset/puzzle.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 15,
+                                                            "y": 0
+                                                        },
+                                                        "scale": 0.425,
+                                                        "rotation": {
+                                                            "x": 0,
+                                                            "y": 180
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCLabelBMFont",
+                                                    "id": "graphic",
+                                                    "attributes": {
+                                                        "font": "Danz_asset/font/united_colony.fnt",
+                                                        "text": "Textures",
+                                                        "scale": 0.6,
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 33,
+                                                            "y": 0
+                                                        },
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "event": {
+                                            "on-activate": {
+                                                "parent": {
+                                                    "parent": {
+                                                        "children": {
+                                                            "node": {
+                                                                "music-label": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "music-slider": {
+                                                                    "attributes": {         
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "sfx-label": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "sfx-slider": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "menu-music-label": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "vault-menu": {
+                                                                    "children": {
+                                                                        "node": {
+                                                                            "menu-music-toggle": {
+                                                                                "attributes": {
+                                                                                    "visible": false
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "music-label": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 50,
+                                    "y": 20
+                                },
+                                "visible": false
+                            }
+                        },
+                        "music-slider": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 50,
+                                    "y": 50
+                                },
+                                "visible": false
+                            }
+                        },
+                        "sfx-label": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 50,
+                                    "y": -30
+                                },
+                                "visible": false
+                            }
+                        },
+                        "sfx-slider": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 50,
+                                    "y": 40
+                                },
+                                "visible": false
+                            }
+                        },
+                        "menu-music-label": {
+                            "attributes": {
+                                "position": {
+                                    "anchor": "self",
+                                    "x": 50,
+                                    "y": 40
+                                },
+                                "visible": false
+                            }
+                        },
+                        "vault-menu": {
+                            "children": {
+                                "node": {
+                                    "menu-music-toggle": {
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "self",
+                                                "x": 50,
+                                                "y": 40
+                                            },
+                                            "visible": false
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "new": [
+                        {
+                            "type": "CCSprite",
+                            "id": "line",
+                            "attributes": {
+                                "sprite": "floorLine_001.png",
+                                "position": {
+                                    "anchor": "center-left",
+                                    "x": 130,
+                                    "y": -20
+                                },
+                                "scale": {
+                                    "x": 0.6,
+                                    "y": 1.5
+                                },
+                                "rotation": 90
+                            }
+                        },
+                        {
+                            "type": "CCMenu",
+                            "id": "more-options-menu",
+                            "attributes": {
+                                "z-order": 1,
+                                "ignore-anchor-pos": false,
+                                "position": {
+                                    "anchor": "self",
+                                    "x": -110,
+                                    "y": 0
+                                },
+                                "actions": [
+                                    {
+                                        "type": "MoveBy",
+                                        "value": {
+                                            "x": 110,
+                                            "y": 0
+                                        },
+                                        "duration": 0.8,
+                                        "easing": "ExponentialOut"
+                                    }
+                                ]
+                            },
+                            "children": {
+                                "new": [
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "id": "audio-button",
+                                        "attributes": {
+                                            "content-size": {
+                                                "width": 152,
+                                                "height": 30
+                                            },
+                                            "scale": 0.8,
+                                            "base-scale": 0.8,
+                                            "position": {
+                                                "anchor": "center-left",
+                                                "x": 75,
+                                                "y": -140   
+                                            }
+                                        },
+                                        "children": {
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "icon",
+                                                    "attributes": {
+                                                        "sprite": "Danz_asset/speaker-icon.png",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 15,
+                                                            "y": 0
+                                                        },
+                                                        "scale": 0.75
+                                                    }
+                                                },
+                                                {
+                                                    "type": "CCLabelBMFont",
+                                                    "id": "audio-label",
+                                                    "attributes": {
+                                                        "font": "Danz_asset/font/united_colony.fnt",
+                                                        "text": "Audio",
+                                                        "position": {
+                                                            "anchor": "center-left",
+                                                            "x": 33,
+                                                            "y": 0
+                                                        },
+                                                        "scale": 0.6,
+                                                        "anchor-point": {
+                                                            "x": 0,
+                                                            "y": 0.5
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "event": {
+                                            "on-activate": {
+                                                "parent": {
+                                                    "parent": {
+                                                        "children": {
+                                                            "node": {
+                                                                "music-label": {
+                                                                    "attributes": {
+                                                                        "position": {
+                                                                            "anchor": "center",
+                                                                            "x": 100,
+                                                                            "y": 20
+                                                                        },
+                                                                        "actions": [
+                                                                            {
+                                                                                "type": "MoveBy",
+                                                                                "value": {
+                                                                                    "x": -50,
+                                                                                    "y": 0
+                                                                                },
+                                                                                "duration": 1,
+                                                                                "easing": "ExponentialOut"
+                                                                            },
+                                                                            {
+                                                                                "type": "FadeIn",
+                                                                                "duration": 0.5
+                                                                            }
+                                                                        ],
+                                                                        "visible": true
+                                                                    }
+                                                                },
+                                                                "music-slider": {
+                                                                    "attributes": {
+                                                                        "position": {
+                                                                            "anchor": "self",
+                                                                            "x": 50,
+                                                                            "y": 0
+                                                                        },
+                                                                        "actions": [
+                                                                            {
+                                                                                "type": "MoveBy",
+                                                                                "value": {
+                                                                                    "x": -50,
+                                                                                    "y": 0
+                                                                                },
+                                                                                "duration": 1,
+                                                                                "easing": "ExponentialOut"
+                                                                            },
+                                                                            {
+                                                                                "type": "FadeIn",
+                                                                                "duration": 0.5
+                                                                            }
+                                                                        ],
+                                                                        "visible": true
+                                                                    }
+                                                                },
+                                                                "sfx-label": {
+                                                                    "attributes": {
+                                                                        "position": {
+                                                                            "anchor": "center",
+                                                                            "x": 100,
+                                                                            "y": -30
+                                                                        },
+                                                                        "actions": [
+                                                                            {
+                                                                                "type": "MoveBy",
+                                                                                "value": {
+                                                                                    "x": -50,
+                                                                                    "y": 0
+                                                                                },
+                                                                                "duration": 1,
+                                                                                "easing": "ExponentialOut"
+                                                                            },
+                                                                            {
+                                                                                "type": "FadeIn",
+                                                                                "duration": 0.5
+                                                                            }
+                                                                        ],
+                                                                        "visible": true
+                                                                    }
+                                                                },
+                                                                "sfx-slider": {
+                                                                    "attributes": {
+                                                                        "position": {
+                                                                            "anchor": "self",
+                                                                            "x": 50,
+                                                                            "y": 0
+                                                                        },
+                                                                        "actions": [
+                                                                            {
+                                                                                "type": "MoveBy",
+                                                                                "value": {
+                                                                                    "x": -50,
+                                                                                    "y": 0
+                                                                                },
+                                                                                "duration": 1,
+                                                                                "easing": "ExponentialOut"
+                                                                            },
+                                                                            {
+                                                                                "type": "FadeIn",
+                                                                                "duration": 0.5
+                                                                            }
+                                                                        ],
+                                                                        "visible": true
+                                                                    }
+                                                                },
+                                                                "menu-music-label": {
+                                                                    "attributes": {
+                                                                        "position": {
+                                                                            "anchor": "self",
+                                                                            "x": 50,
+                                                                            "y": 0
+                                                                        },
+                                                                        "actions": [
+                                                                            {
+                                                                                "type": "MoveBy",
+                                                                                "value": {
+                                                                                    "x": -50,
+                                                                                    "y": 0
+                                                                                },
+                                                                                "duration": 1,
+                                                                                "easing": "ExponentialOut"
+                                                                            },
+                                                                            {
+                                                                                "type": "FadeIn",
+                                                                                "duration": 0.5
+                                                                            }
+                                                                        ],
+                                                                        "visible": true
+                                                                    }
+                                                                },
+                                                                "vault-menu": {
+                                                                    "children": {
+                                                                        "node": {
+                                                                            "menu-music-toggle": {
+                                                                                "attributes": {
+                                                                                    "position": {
+                                                                                        "anchor": "self",
+                                                                                        "x": 50,
+                                                                                        "y": 0
+                                                                                    },
+                                                                                    "actions": [
+                                                                                        {
+                                                                                            "type": "MoveBy",
+                                                                                            "value": {
+                                                                                                "x": -50,
+                                                                                                "y": 0
+                                                                                            },
+                                                                                            "duration": 1,
+                                                                                            "easing": "ExponentialOut"
+                                                                                        },
+                                                                                        {
+                                                                                            "type": "FadeIn",
+                                                                                            "duration": 0.5
+                                                                                        }
+                                                                                    ],
+                                                                                    "visible": true
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "move": [
+                        {
+                            "node": "options-menu > account-button",
+                            "parent": "{id}/more-options-menu",
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center-left",
+                                    "x": 75,
+                                    "y": 105
+                                }
+                            }
+                        },
+                        {
+                            "node": "options-menu > how-to-play-button",
+                            "parent": "{id}/more-options-menu",
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center-left",
+                                    "x": 75,
+                                    "y": 70
+                                }
+                            }
+                        },
+                        {
+                            "node": "options-menu > options-button",
+                            "parent": "{id}/more-options-menu",
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center-left",
+                                    "x": 75,
+                                    "y": 35
+                                }
+                            }
+                        },
+                        {
+                            "node": "options-menu > graphics-button",
+                            "parent": "{id}/more-options-menu",
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center-left",
+                                    "x": 75,
+                                    "y": 0
+                                }
+                            }
+                        },
+                        {
+                            "node": "options-menu > rate-button",
+                            "parent": "{id}/more-options-menu",
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center-left",
+                                    "x": 75,
+                                    "y": -35
+                                }
+                            }
+                        },
+                        {
+                            "node": "options-menu > songs-button",
+                            "parent": "{id}/more-options-menu",
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center-left",
+                                    "x": 75,
+                                    "y": -70
+                                }
+                            }
+                        },
+                        {
+                            "node": "options-menu > help-button",
+                            "parent": "{id}/more-options-menu",
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center-left",
+                                    "x": 75,
+                                    "y": -105
+                                }
+                            }
+                        },
+                        {
+                            "node": "options-menu > geode.texture-loader/texture-loader-button",
+                            "parent": "{id}/more-options-menu",
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center-left",
+                                    "x": 75,
+                                    "y": 0
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

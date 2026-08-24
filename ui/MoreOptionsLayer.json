@@ -1,0 +1,238 @@
+{
+    "children": {
+        "node": {
+            "main-layer": {
+                "attributes": {
+                    "actions": [
+                        {
+                            "type": "Stop"
+                        },
+                        {
+                            "type": "MoveBy",
+                            "value": {
+                                "x": -600,
+                                "y": 0
+                            },
+                            "duration": 1,
+                            "easing": "ExponentialOut"
+                        }
+                    ],
+                    "position": {
+                        "anchor": "self",
+                        "x": 640,
+                        "y": -15
+                    },
+                    "scale": 1
+                },
+                "children": {
+                    "node": {
+                        "background": {
+                            "attributes": {
+                                "visible": false
+                            }
+                        },
+                        "togglers-menu": {
+                            "children": {
+                                "node": {
+                                    "left-arrow-button": {
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "bottom-center",
+                                                "x": -70,
+                                                "y": 30
+                                            },
+                                            "rotation": 90
+                                        }
+                                    },
+                                    "right-arrow-button": {
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "self",
+                                                "x": -50,
+                                                "y": -30
+                                            },
+                                            "rotation": 90
+                                        }
+                                    },
+                                    "close-button": {
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "bottom-left",
+                                                "x": -260,
+                                                "y": 15
+                                            },
+                                            "content-size": {
+                                                "width": 130,
+                                                "height": 320
+                                            },
+                                            "color": "#ffffffff",
+                                            "opacity": 0
+                                        },
+                                        "children": {
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "back",
+                                                    "attributes": {
+                                                        "sprite": "edit_downBtn_001.png",
+                                                        "scale": 2,
+                                                        "position": {
+                                                            "anchor": "center",
+                                                            "x": 0,
+                                                            "y": 0
+                                                        },
+                                                        "rotation": 90
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "gameplay-options-layer-1": {
+                            "children": {
+                                "new": [
+                                    {
+                                        "type": "CCLabelBMFont",
+                                        "id": "page-count",
+                                        "attributes": {
+                                            "font": "Danz_asset/font/united_colony.fnt",
+                                            "text": "1",
+                                            "scale": 0.7,
+                                            "position": {
+                                                "anchor": "center-right",
+                                                "x": -70,
+                                                "y": 0
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "visual-options-layer-1": {
+                            "children": {
+                                "new": [
+                                    {
+                                        "type": "CCLabelBMFont",
+                                        "id": "page-count",
+                                        "attributes": {
+                                            "font": "Danz_asset/font/united_colony.fnt",
+                                            "text": "2",
+                                            "scale": 0.7,
+                                            "position": {
+                                                "anchor": "center-right",
+                                                "x": -70,
+                                                "y": 0
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "visual-options-layer-2": {
+                            "children": {
+                                "new": [
+                                    {
+                                        "type": "CCLabelBMFont",
+                                        "id": "page-count",
+                                        "attributes": {
+                                            "font": "Danz_asset/font/united_colony.fnt",
+                                            "text": "3",
+                                            "scale": 0.7,
+                                            "position": {
+                                                "anchor": "center-right",
+                                                "x": -70,
+                                                "y": 0
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "practice-options-layer": {
+                            "children": {
+                                "new": [
+                                    {
+                                        "type": "CCLabelBMFont",
+                                        "id": "page-count",
+                                        "attributes": {
+                                            "font": "Danz_asset/font/united_colony.fnt",
+                                            "text": "4",
+                                            "scale": 0.7,
+                                            "position": {
+                                                "anchor": "center-right",
+                                                "x": -70,
+                                                "y": 0
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "performance-options-layer": {
+                            "children": {
+                                "new": [
+                                    {
+                                        "type": "CCLabelBMFont",
+                                        "id": "page-count",
+                                        "attributes": {
+                                            "font": "Danz_asset/font/united_colony.fnt",
+                                            "text": "5",
+                                            "scale": 0.7,
+                                            "position": {
+                                                "anchor": "center-right",
+                                                "x": -70,
+                                                "y": 0
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "audio-options-layer": {
+                            "children": {
+                                "new": [
+                                    {
+                                        "type": "CCLabelBMFont",
+                                        "id": "page-count",
+                                        "attributes": {
+                                            "font": "Danz_asset/font/united_colony.fnt",
+                                            "text": "6",
+                                            "scale": 0.7,
+                                            "position": {
+                                                "anchor": "center-right",
+                                                "x": -70,
+                                                "y": 0
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "other-options-layer": {
+                            "children": {
+                                "new": [
+                                    {
+                                        "type": "CCLabelBMFont",
+                                        "id": "page-count",
+                                        "attributes": {
+                                            "font": "Danz_asset/font/united_colony.fnt",
+                                            "text": "7",
+                                            "scale": 0.7,
+                                            "position": {
+                                                "anchor": "center-right",
+                                                "x": -70,
+                                                "y": 0
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

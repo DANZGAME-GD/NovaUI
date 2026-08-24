@@ -1,0 +1,332 @@
+{
+    "children": {
+        "index": [
+            {
+                "type": "CCLayer",
+                "index": 0,
+                 "attributes": {
+                    "actions": [
+                        {
+                            "type": "Stop"
+                        },
+                        {
+                            "type": "MoveBy",
+                            "value": {
+                                "x": -600,
+                                "y": 0
+                            },
+                            "duration": 1,
+                            "easing": "ExponentialOut"
+                        }
+                    ],
+                    "position": {
+                        "anchor": "self",
+                        "x": 600,
+                        "y": 0
+                    },
+                    "scale": 1
+                },
+                "children": {
+                    "index": [
+                        {
+                            "type": "CCScale9Sprite",
+                            "index": 0,
+                            "attributes": {
+                                "visible": false
+                            }
+                        },
+                        {
+                            "type": "CCLabelBMFont",
+                            "comment": "Video Options Layer",
+                            "index": 0,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center",
+                                    "x": -100,
+                                    "y": 95
+                                },
+                                "anchor-point": {
+                                    "x": 0,
+                                    "y": 0.5
+                                }
+                            }
+                        },
+                        {
+                            "type": "CCLabelBMFont",
+                            "comment": "Fullscreen Layer",
+                            "index": 1,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center",
+                                    "x": -90,
+                                    "y": 60
+                                },
+                                "anchor-point": {
+                                    "x": 0,
+                                    "y": 0.5
+                                }
+                            }
+                        },
+                        {
+                            "type": "CCLabelBMFont",
+                            "comment": "Borderless Layer",
+                            "index": 2,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center",
+                                    "x": -90,
+                                    "y": 30
+                                },
+                                "anchor-point": {
+                                    "x": 0,
+                                    "y": 0.5
+                                }
+                            }
+                        },
+                        {
+                            "type": "CCLabelBMFont",
+                            "comment": "Fix Layer",
+                            "index": 3,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center",
+                                    "x": -90,
+                                    "y": 0
+                                },
+                                "anchor-point": {
+                                    "x": 0,
+                                    "y": 0.5
+                                }
+                            }
+                        },
+                        {
+                            "type": "CCLabelBMFont",
+                            "comment": "Resolusion Label",
+                            "index": 4,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 60,
+                                    "y": -60
+                                }
+                            }
+                        },
+                        {
+                            "type": "CCLabelBMFont",
+                            "comment": "Graphic Label",
+                            "index": 5,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 140,
+                                    "y": 20
+                                }
+                            }
+                        },
+                        {
+                            "type": "CCLabelBMFont",
+                            "comment": "Texture Quality Label",
+                            "index": 6,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 140,
+                                    "y": 50
+                                }
+                            }
+                        },
+                        {
+                            "type": "CCLabelBMFont",
+                            "comment": "Windowed Resolusion Layer",
+                            "index": 7,
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 60,
+                                    "y": -30
+                                }
+                            }
+                        },
+                        {
+                            "type": "CCMenu",
+                            "index": 0,
+                            "children": {
+                                "index": [
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "comment": "Fullscreen Button",
+                                        "index": 0,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "bottom-left",
+                                                "x": -110,
+                                                "y": 60
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "comment": "Borderless Button",
+                                        "index": 1,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "bottom-left",
+                                                "x": -110,
+                                                "y": 30
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemToggler",
+                                        "comment": "Fix Button",
+                                        "index": 2,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "bottom-left",
+                                                "x": -110,
+                                                "y": 0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "comment": "Left Resolusion Button",
+                                        "index": 0,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "bottom-left",
+                                                "x": -15,
+                                                "y": -60
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "comment": "Right Resolusion Button",
+                                        "index": 1,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "bottom-left",
+                                                "x": 132,
+                                                "y": -60
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "comment": "Left Graphic Button",
+                                        "index": 2,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "bottom-left",
+                                                "x": 85,
+                                                "y": 18
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "comment": "Right Graphic Button",
+                                        "index": 3,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "bottom-left",
+                                                "x": 190,
+                                                "y": 18
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "comment": "Back Button",
+                                        "index": 4,
+                                        "attributes": {
+                                            "visible": false
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "comment": "Apply Button",
+                                        "index": 5,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "bottom-left",
+                                                "x": 170,
+                                                "y": -120
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "comment": "Exit Button",
+                                        "index": 6,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "bottom-left",
+                                                "x": -218,
+                                                "y": 0
+                                            },
+                                            "content-size": {
+                                                "width": 130,
+                                                "height": 320
+                                            },
+                                            "color": "#ffffffff",
+                                            "opacity": 0
+                                        },
+                                        "children": {
+                                            "new": [
+                                                {
+                                                    "type": "CCSprite",
+                                                    "id": "back",
+                                                    "attributes": {
+                                                        "sprite": "edit_downBtn_001.png",
+                                                        "scale": 2,
+                                                        "position": {
+                                                            "anchor": "center",
+                                                            "x": 0,
+                                                            "y": 0
+                                                        },
+                                                        "rotation": 90
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "CCMenuItemSpriteExtra",
+                                        "comment": "Advanced Button",
+                                        "index": 7,
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "bottom-left",
+                                                "x": -40,
+                                                "y": -120
+                                            },
+                                            "scale": 1.2,
+                                            "base-scale": 1.2,
+                                            "sprite": "GJ_button_01.png"
+                                        }
+                                    }
+                                ],
+                                "node": {
+                                    "geode.texture-loader/texture-loader-button": {
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "bottom-left",
+                                                "x": 65,
+                                                "y": -120
+                                            },
+                                            "scale": 1.2,
+                                            "base-scale": 1.2,
+                                            "sprite": "GJ_button_01.png"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

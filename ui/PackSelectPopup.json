@@ -57,6 +57,32 @@
                                     }
                                 ]
                             }
+                        },
+                        {
+                            "type": "CCScale9Sprite",
+                            "id": "pack-bg",
+                            "attributes": {
+                                "sprite": "geode.loader/GE_square03.png",
+                                "z-order": -10,
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "content-size": {
+                                    "width": 440,
+                                    "height": 290
+                                }
+                            }
+                        }
+                    ],
+                    "index": [
+                        {
+                            "type": "NineSlice",
+                            "index": 0,
+                            "attributes": {
+                                "visible": false
+                            }
                         }
                     ]
                 }
