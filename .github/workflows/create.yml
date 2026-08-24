@@ -38,9 +38,11 @@ jobs:
 
           rsync -av . temp_pack \
             --exclude ".git" \
+            --exclude ".vscode" \
             --exclude "NovaUi_Extension.zip" \
             --exclude "temp_pack" \
             --exclude ".github" \
+            --exclude "schema.json" \
             --exclude "changelog.json" \
             --exclude "README.md"
           cd temp_pack
@@ -54,13 +56,15 @@ jobs:
 
           rsync -av . temp_ext \
             --exclude ".git" \
+            --exclude ".vscode"
             --exclude "animate_bg" \
             --exclude "GJ_gradientBG.png.animate.json" \
             --exclude "NovaUi.zip" \
             --exclude "temp_ext" \
             --exclude ".github" \
             --exclude "changelog.json" \
-            --exclude "README.md"
+            --exclude "README.md" \
+            --exclude "schema.json"
 
           jq '.name = "Nova Ui: Extension" | .id = "DANZGAME.Nova_Ui-exten"' temp_ext/pack.json > temp_ext/pack_temp.json 
           mv temp_ext/pack_temp.json temp_ext/pack.json

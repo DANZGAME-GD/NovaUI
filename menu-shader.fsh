@@ -1,3 +1,5 @@
+//Shaders Credits https://www.shadertoy.com/view/wlXcDS
+
 uniform vec2 center; 
 uniform vec2 resolution;
 uniform float time;

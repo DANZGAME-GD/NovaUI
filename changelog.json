@@ -27,5 +27,24 @@
     ],
     "1.7.4": [
         "Fixed: Workflow Extension ID"
+    ],
+    "1.8.0": [
+        "Added: Profile Alert Signed Out",
+        "Added: FlessGD As A Credit Player",
+        "Added: Website Button",
+        "Added: Game Version In Info Menu",
+        "Added: Level Logo (Experiment)",
+        "Added: Green Level Name When Player Complete",
+        "Change: Settings Ui",
+        "Change: Paths Of Power Ui",
+        "Change: Player BG And Backround Animate",
+        "Update: Hide Ui Animation",
+        "Update: Info Menu",
+        "Update: Credits Menu",
+        "Update: Loading Layer View",
+        "Fixed: Anchor Position Info Menu",
+        "Fixed: Search Button",
+        "Adjustment: Moving Some Button Info And Replacing Sprite",
+        "Adjustment: Complete Text"
     ]
 }
