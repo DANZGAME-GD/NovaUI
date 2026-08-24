@@ -1,0 +1,5 @@
+{
+    "if": [
+        { "statement": "level_id == 125905209", "children": { "node": { "level-name": { "attributes": { "visible": false } } }, "new": [ { "type": "CCSprite", "id": "level-text", "attributes": { "sprite": "Danz_asset/levels/guardian_nusantara.png", "position": { "anchor": "top-center", "x": 0, "y": -30 }, "scale": 0.7 } } ] } }
+    ]
+}
