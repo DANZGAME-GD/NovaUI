@@ -56,7 +56,7 @@ jobs:
 
           rsync -av . temp_ext \
             --exclude ".git" \
-            --exclude ".vscode"
+            --exclude ".vscode" \
             --exclude "animate_bg" \
             --exclude "GJ_gradientBG.png.animate.json" \
             --exclude "NovaUi.zip" \
