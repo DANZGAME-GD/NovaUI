@@ -1,4 +1,45 @@
 {
+    "if": [
+        {
+            "statement": "level_id == 125905209",
+            "children": {
+                "node": {
+                    "title-label": {
+                        "attributes": {
+                            "visible": false
+                        }
+                    }
+                },
+                "new": [
+                    {
+                        "type": "CCSprite",
+                        "id": "level-text",
+                        "attributes": {
+                            "sprite": "Danz_asset/levels/guardian_nusantara.png",
+                            "position": {
+                                "anchor": "top-center",
+                                "x": 0,
+                                "y": -25
+                            },
+                            "scale": 0.55
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "statement": "level_normal_percent == 100",
+            "children": {
+                "node": {
+                    "title-label": {
+                        "attributes": {
+                            "color": "#00FF00FF"
+                        }
+                    }
+                }
+            }
+        }
+    ],
     "children": {
         "node": {
             "background": {

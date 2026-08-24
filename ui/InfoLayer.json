@@ -1,0 +1,16 @@
+{
+    "if": [
+        {
+            "statement": "level_normal_percent == 100",
+            "children": {
+                "query": {
+                    "[CCLayer:0] > title-label": {
+                        "attributes": {
+                            "color": "#00FF00FF"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
