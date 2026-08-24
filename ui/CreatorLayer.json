@@ -6,10 +6,6 @@
                 "parent": "top-right-menu"
             },
             {
-                "node": "spaghettdev.gd-roulette/center-left-menu > spaghettdev.gd-roulette/roulette-button",
-                "parent": "top-right-menu"
-            },
-            {
                 "node": "bottom-left-menu > raydeeux.qiblafinder/qibla-finder-button",
                 "parent": "top-right-menu",
                 "attributes": {
@@ -48,6 +44,10 @@
             },
             {
                 "node": "bottom-left-menu > viper.br_list/brl-roulette",
+                "parent": "top-right-menu"
+            },
+            {
+                "node": "spaghettdev.gd-roulette/center-left-menu > spaghettdev.gd-roulette/roulette-button",
                 "parent": "top-right-menu"
             }
         ],
@@ -1625,7 +1625,8 @@
                     "id": "ui-hide-off",
                     "attributes": {
                         "ignore-anchor-pos": false,
-                        "z-order": 1
+                        "z-order": 1,
+                        "visible": false
                     },
                     "children": {
                         "new": [
@@ -1656,12 +1657,50 @@
                                                     "node": {
                                                         "nova-right-creator": {
                                                             "attributes": {
-                                                                "visible": true
+                                                                "actions": [
+                                                                    {
+                                                                        "type": "ScaleBy",
+                                                                        "value": 1,
+                                                                        "duration": 0.1
+                                                                    },
+                                                                    {
+                                                                        "type": "MoveBy",
+                                                                        "value": {
+                                                                            "x": -50,
+                                                                            "y": 0
+                                                                        },
+                                                                        "duration": 0.1,
+                                                                        "easing": "ExponentialInOut"
+                                                                    },
+                                                                    {
+                                                                        "type": "FadeIn",
+                                                                        "duration": 0.1
+                                                                    }
+                                                                ]
                                                             }
                                                         },
                                                         "nova-left-creator": {
                                                             "attributes": {
-                                                                "visible": true
+                                                                "actions": [
+                                                                    {
+                                                                        "type": "ScaleBy",
+                                                                        "value": 1,
+                                                                        "duration": 0.1
+                                                                    },
+                                                                    {
+                                                                        "type": "MoveBy",
+                                                                        "value": {
+                                                                            "x": 50,
+                                                                            "y": 0
+                                                                        },
+                                                                        "duration": 0.1,
+                                                                        "easing": "ExponentialInOut"
+                                                                    },
+                                                                    {
+                                                                        "type": "FadeIn",
+                                                                        "duration": 0.1
+                                                                    }
+                                                                ]
                                                             }
                                                         },
                                                         "ui-hide-on": {
@@ -1686,7 +1725,21 @@
                                                         },
                                                         "top-right-menu": {
                                                             "attributes": {
-                                                                "visible": true
+                                                                "actions": [
+                                                                    {
+                                                                        "type": "MoveBy",
+                                                                        "value": {
+                                                                            "x": 0,
+                                                                            "y": 50
+                                                                        },
+                                                                        "duration": 0.1,
+                                                                        "easing": "ExponentialInOut"
+                                                                    },
+                                                                    {
+                                                                        "type": "FadeIn",
+                                                                        "duration": 0.1
+                                                                    }
+                                                                ]
                                                             }
                                                         },
                                                         "bottom-right-menu": {
@@ -1749,12 +1802,50 @@
                                                     "node": {
                                                         "nova-right-creator": {
                                                             "attributes": {
-                                                                "visible": false
+                                                                "actions": [
+                                                                    {
+                                                                        "type": "ScaleBy",
+                                                                        "value": 1,
+                                                                        "duration": 0.1
+                                                                    },
+                                                                    {
+                                                                        "type": "MoveBy",
+                                                                        "value": {
+                                                                            "x": 50,
+                                                                            "y": 0
+                                                                        },
+                                                                        "duration": 0.1,
+                                                                        "easing": "ExponentialInOut"
+                                                                    },
+                                                                    {
+                                                                        "type": "FadeOut",
+                                                                        "duration": 0.1
+                                                                    }
+                                                                ]
                                                             }
                                                         },
                                                         "nova-left-creator": {
                                                             "attributes": {
-                                                                "visible": false
+                                                                "actions": [
+                                                                    {
+                                                                        "type": "ScaleBy",
+                                                                        "value": 1,
+                                                                        "duration": 0.1
+                                                                    },
+                                                                    {
+                                                                        "type": "MoveBy",
+                                                                        "value": {
+                                                                            "x": -50,
+                                                                            "y": 0
+                                                                        },
+                                                                        "duration": 0.1,
+                                                                        "easing": "ExponentialInOut"
+                                                                    },
+                                                                    {
+                                                                        "type": "FadeOut",
+                                                                        "duration": 0.1
+                                                                    }
+                                                                ]
                                                             }
                                                         },
                                                         "ui-hide-off": {
@@ -1769,7 +1860,21 @@
                                                         },
                                                         "top-right-menu": {
                                                             "attributes": {
-                                                                "visible": false
+                                                                "actions": [
+                                                                    {
+                                                                        "type": "MoveBy",
+                                                                        "value": {
+                                                                            "x": 0,
+                                                                            "y": -50
+                                                                        },
+                                                                        "duration": 0.1,
+                                                                        "easing": "ExponentialInOut"
+                                                                    },
+                                                                    {
+                                                                        "type": "FadeOut",
+                                                                        "duration": 0.1
+                                                                    }
+                                                                ]
                                                             }
                                                         },
                                                         "bottom-right-menu": {
