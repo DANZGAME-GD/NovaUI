@@ -1,0 +1,30 @@
+//disable
+{
+    "attributes":{
+        "scale":1
+    },
+    "children":{
+        "index":[
+            {
+                "type":"CCLayer",
+                "index":0,
+                "attributes":{
+                	"visible":true,
+                    "opacity":255,
+                    "scale":0,
+                    "actions":[
+                        {
+                            "type":"Stop"
+                        },
+                        {
+                            "type":"ScaleTo",
+                            "value":1,
+                            "duration":0.6,
+                            "easing":"ExponentialOut"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
